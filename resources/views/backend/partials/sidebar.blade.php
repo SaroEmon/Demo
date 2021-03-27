@@ -38,7 +38,7 @@
             </span>
         </a>
     <li>
-        <a href="{{route('pms.doctors')}}">
+        <a href="{{route('doctors')}}">
             <i class="fas fa-user-md"></i> <span>Doctor</span>
         </a>
     </li>

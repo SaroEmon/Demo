@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
-use app\Http\Controller\Backend\DoctorsController;
+use App\Http\Controllers\Backend\DoctorsController;
 
 
 
@@ -21,4 +21,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/doctors',[DoctorsController::class,'doctors'])->name('pms.doctors');
+Route::get('/doctors',[DoctorsController::class,'doctors'])->name('doctors');
