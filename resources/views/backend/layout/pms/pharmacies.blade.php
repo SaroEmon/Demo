@@ -2,7 +2,7 @@
 @section('page')
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" style="margin-top:20px; margin-left:10px;">
-        Add Patients
+        Add Pharmacies
     </button>
 
     <!-- Modal -->

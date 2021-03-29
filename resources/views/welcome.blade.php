@@ -64,10 +64,15 @@
 
 
     <!------------------------------ Content DASHBOARD PAGE LAYOUT Start---------------------->
+
     <div class="content-wrapper">
-        @yield('page')
+     
+    @yield('page')
+     
 
     </div>
+    </div>
+    
     <!------------------------------ Content DASHBOARD PAGE LAYOUT End---------------------->
 
 

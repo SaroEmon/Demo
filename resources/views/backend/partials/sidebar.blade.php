@@ -30,55 +30,38 @@
 <ul class="sidebar-menu" data-widget="tree">
 
 
-    <li class="treeview">
+    <li>
         <a href="#">
-            <i class="fa fa-files-o"></i>
-            <span>Admin</span>
-            <span class="pull-right-container">
-            </span>
+            <i class="fas fa-user-md"></i> <span>Admin</span>
         </a>
+    </li>
     <li>
         <a href="{{route('doctors')}}">
             <i class="fas fa-user-md"></i> <span>Doctor</span>
         </a>
     </li>
-    <li class="treeview">
-        <a href="#">
-            <i class="fas fa-ambulance"></i>
-            <span>Nurse</span>
-            <span class="pull-right-container">
-            </span>
+    <li>
+        <a href="{{route('nurses')}}">
+            <i class="fas fa-user-md"></i> <span>Nurse</span>
         </a>
     </li>
-    <li class="treeview">
-        <a href="#">
-            <i class="fa fa-files-o"></i>
-            <span>Medicine</span>
-            <span class="pull-right-container">
-            </span>
+    <li>
+        <a href="{{route('medicines')}}">
+            <i class="fas fa-user-md"></i> <span>Medicine</span>
         </a>
-    <li class="treeview">
-        <a href="#">
-            <i class="fa fa-files-o"></i>
-            <span>Pharmacy</span>
-            <span class="pull-right-container">
-            </span>
-        </a>
-    <li class="treeview">
-        <a href="#">
-            <i class="fa fa-files-o"></i>
-            <span>Prescription</span>
-            <span class="pull-right-container">
-
-            </span>
+        <li>
+        <a href="{{route('pharmacies')}}">
+            <i class="fas fa-user-md"></i> <span>Pharmacy</span>
         </a>
     </li>
-    <li class="treeview">
-        <a href="#">
-            <i class="fa fa-files-o"></i>
-            <span>Patient</span>
-            <span class="pull-right-container">
-            </span>
+    <li>
+        <a href="{{route('prescriptions')}}">
+            <i class="fas fa-user-md"></i> <span>Prescription</span>
+        </a>
+    </li>
+    <li>
+        <a href="{{route('patients')}}">
+            <i class="fas fa-user-md"></i> <span>Patients</span>
         </a>
     </li>
 
