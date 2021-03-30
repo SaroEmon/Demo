@@ -4,12 +4,17 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Nurse;
 
 class NursesController extends Controller
 {
     public function nurses()
     {
-        return view ('backend.layout.pms.nurses');
+        $nurses=Nurse::all();
+        return view ('backend.layout.pms.nurses',compact('nurses'));
     }
-    //
+    public  function nursesCreate()
+    {
+        return view('backend.layout.pms.nursesCreate');
+    }
 }

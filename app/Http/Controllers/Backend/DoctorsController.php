@@ -10,6 +10,7 @@ class DoctorsController extends Controller
 {
     public function doctors()
     {
+      
         $doctors=Doctor::all();
         return view('backend.layout.pms.doctors',compact('doctors'));
     }

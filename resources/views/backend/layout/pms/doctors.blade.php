@@ -2,9 +2,9 @@
 @section('page')
     <!-- Button trigger modal -->
     <br>
-    <center><button type="button" class="btn btn-danger" >
-        Add doctors
-    </button></center><br>
+    <center><a href="{{route('doctors.create')}}"><button type="button" class="btn btn-danger" >
+        Add Doctors
+            </button></a></center><br>
     <table  class="table table-responsive table-bordered table-hover">
         <thead>
 
@@ -40,11 +40,11 @@
 
                 </td>
 
-                
+
 
             </tr>
 
-                
+
             @endforeach
 
 
@@ -57,6 +57,6 @@
 
     </table>
 
-    
+
 
 @stop

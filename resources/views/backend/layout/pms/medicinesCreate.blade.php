@@ -61,7 +61,7 @@
             </form>
         </article>
 
-            <div class="modal-footer">
+        <div class="modal-footer">
             <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Save changes</button>
 
