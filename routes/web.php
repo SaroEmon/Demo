@@ -37,6 +37,7 @@ Route::post('/doctors/list',[DoctorsController::class,'doctorsList'])->name('doc
 //NURSE
 Route::get('/nurses',[NursesController::class,'nurses'])->name('nurses');
 Route::get('/nurses/create',[NursesController::class,'nursesCreate'])->name('nurses.create');
+Route::post('/nurses/list',[NursesController::class,'nursesCreate'])->name('nurses.list');
 
 
 

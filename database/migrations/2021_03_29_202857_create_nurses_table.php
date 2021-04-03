@@ -16,13 +16,13 @@ class CreateNursesTable extends Migration
         Schema::create('nurses', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('department');
             $table->string('email');
-            $table->string('address');
             $table->integer('contact');
-            $table->integer('room_no');
-
-            $table->string('description');
+            $table->string('gender');
+            $table->string('department');
+            $table->text('address');
+            $table->integer('cabin_no');
+            $table->string('password');
 
 
             $table->timestamps();
