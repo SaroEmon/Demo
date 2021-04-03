@@ -11,10 +11,10 @@ class PharmaciesController extends Controller
     public function pharmacies()
     {
         $pharmacies=Pharmacy::all();
-        return view('backend.layout.pms.pharmacies',compact('pharmacies'));
+        return view('backend.layout.pms.pharmacies.pharmacies',compact('pharmacies'));
     }
     public function pharmaciesCreate()
     {
-        return view('backend.layout.pms.pharmaciesCreate');
+        return view('backend.layout.pms.pharmacies.pharmaciesCreate');
     }
 }

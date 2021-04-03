@@ -30,13 +30,14 @@ Route::get('/', function () {
 
 Route::get('/doctors',[DoctorsController::class,'doctors'])->name('doctors');
 Route::get('/doctors/create',[DoctorsController::class,'doctorsCreate'])->name('doctors.create');
-
+Route::post('/doctors/list',[DoctorsController::class,'doctorsList'])->name('doctors.list');
 
 
 
 //NURSE
 Route::get('/nurses',[NursesController::class,'nurses'])->name('nurses');
 Route::get('/nurses/create',[NursesController::class,'nursesCreate'])->name('nurses.create');
+
 
 
 

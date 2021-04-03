@@ -11,10 +11,10 @@ class PatientsController extends Controller
     public function patients()
     {
         $patients=Patient::all();
-        return view('backend.layout.pms.patients',compact('patients'));
+        return view('backend.layout.pms.patients.patients',compact('patients'));
     }
     public function patientsCreate()
     {
-        return view('backend.layout.pms.patients');
+        return view('backend.layout.pms.patients.patientsCreate');
     }
 }

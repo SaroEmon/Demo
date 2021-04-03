@@ -11,10 +11,10 @@ class NursesController extends Controller
     public function nurses()
     {
         $nurses=Nurse::all();
-        return view ('backend.layout.pms.nurses',compact('nurses'));
+        return view ('backend.layout.pms.nurses.nurses',compact('nurses'));
     }
     public  function nursesCreate()
     {
-        return view('backend.layout.pms.nursesCreate');
+        return view('backend.layout.pms.nurses.nursesCreate');
     }
 }

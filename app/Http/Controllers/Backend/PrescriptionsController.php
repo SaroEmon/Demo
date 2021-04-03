@@ -11,10 +11,10 @@ class PrescriptionsController extends Controller
     public function prescriptions()
     {
         $prescriptions=Prescription::all();
-        return view('backend.layout.pms.prescriptions',compact('prescriptions'));
+        return view('backend.layout.pms.prescriptions.prescriptions',compact('prescriptions'));
     }
     public function prescriptionsCreate()
     {
-        return view('backend.layout.pms.prescriptionsCreate');
+        return view('backend.layout.pms.prescriptions.prescriptionsCreate');
     }
 }
