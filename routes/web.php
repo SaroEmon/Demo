@@ -37,7 +37,7 @@ Route::post('/doctors/list',[DoctorsController::class,'doctorsList'])->name('doc
 //NURSE
 Route::get('/nurses',[NursesController::class,'nurses'])->name('nurses');
 Route::get('/nurses/create',[NursesController::class,'nursesCreate'])->name('nurses.create');
-Route::post('/nurses/list',[NursesController::class,'nursesCreate'])->name('nurses.list');
+Route::post('/nurses/list',[NursesController::class,'nursesList'])->name('nurses.list');
 
 
 
@@ -45,11 +45,12 @@ Route::post('/nurses/list',[NursesController::class,'nursesCreate'])->name('nurs
 //MEDICINE
 Route::get('/medicines',[MedicinesController::class,'medicines'])->name('medicines');
 Route::get('/medicines/create',[MedicinesController::class,'medicinesCreate'])->name('medicines.create');
-
+Route::post('/medicines/list',[MedicinesController::class,'medicinesList'])->name('medicines.list');
 
 //PHARMACY
 Route::get('/pharmacy',[PharmaciesController::class,'pharmacies'])->name('pharmacies');
 Route::get('/pharmacy/create',[PharmaciesController::class,'pharmaciesCreate'])->name('pharmacies.create');
+Route::post('/pharmacy/list',[PharmaciesController::class,'pharmaciesList'])->name('pharmacies.list');
 
 
 //PRESCRIPTION
@@ -61,6 +62,12 @@ Route::get('/prescription/create',[PrescriptionsController::class,'prescriptions
 
 Route::get('/patients',[PatientsController::class,'patients'])->name('patients');
 Route::get('/patients/create',[PatientsController::class,'patientsCreate'])->name('patients.create');
+Route::post('/patients/list',[PatientsController::class,'patientsList'])->name('patients.list');
+
+
+
+
+
 
 
 

@@ -21,7 +21,7 @@ class CreateNursesTable extends Migration
             $table->string('gender');
             $table->string('department');
             $table->text('address');
-            $table->integer('cabin_no');
+            $table->integer('word_no');
             $table->string('password');
 
 

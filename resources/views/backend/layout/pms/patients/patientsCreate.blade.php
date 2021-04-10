@@ -58,14 +58,17 @@
                 </div> <!-- form-group// -->
                 <div class="form-group">
 
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+
+                    </div>
+
+
             </form>
         </article>
 
-        <div class="modal-footer">
-            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
 
-        </div>
 
     </div> <!-- card.// -->
 

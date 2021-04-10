@@ -7,73 +7,61 @@
 
 
 
-            <form>
+            <form action="{{route('medicines.list')}}" method="post">
+
+                @csrf
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                     </div>
-                    <input name="" class="form-control" placeholder="Full name" type="text">
+                    <input name="name" class="form-control" placeholder="Medicine Name" type="text">
                 </div> <!-- form-group// -->
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
                     </div>
-                    <input name="" class="form-control" placeholder="Email address" type="email">
+                    <input name="patient_id" class="form-control" placeholder="Patient ID" type="number">
                 </div> <!-- form-group// -->
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
                     </div>
 
-                    <input name="" class="form-control" placeholder="Phone number" type="text">
+                    <input name="medicine_id" class="form-control" placeholder="Medicine ID" type="number">
                 </div> <!-- form-group// -->
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-building"></i> </span>
                     </div>
-                    <select class="form-control">
-                        <option selected=""> Select Department</option>
-                        <option>Medicine</option>
-                        <option> Physiology</option>
-                        <option> Ophthalmology</option>
-                        <option> Microbiology</option>
-                        <option> Pathology </option>
-                        <option> Pharmacology</option>
-                        <option> Community Medicine</option>
-                        <option> Surgery </option>
+                    <select name="department" class="form-control">
+                        <option selected="department"> Select Department</option>
+                        <option value="medicine">Medicine</option>
+                        <option value="Physiology"> Physiology</option>
+                        <option value="Ophthalmology"> Ophthalmology</option>
+                        <option value="Microbiology"> Microbiology</option>
+                        <option value="Pathology"> Pathology </option>
+                        <option value="Pharmacology"> Pharmacology</option>
+                        <option value="Community Medicine"> Community Medicine</option>
+                        <option value="Surgery"> Surgery </option>
 
                     </select>
                 </div> <!-- form-group end.// -->
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                    </div>
-                    <input class="form-control" placeholder="Create password" type="password">
-                </div> <!-- form-group// -->
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                    </div>
-                    <input class="form-control" placeholder="Repeat password" type="password">
-                </div> <!-- form-group// -->
+
+                 <!-- form-group// -->
                 <div class="form-group">
 
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+
+                    </div>
             </form>
         </article>
 
-        <div class="modal-footer">
-            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-
-        </div>
-
-    </div> <!-- card.// -->
-
-    </div>
-    <!--container end.//-->
 
 
-    </article>
+
 
 
 

@@ -27,7 +27,7 @@
                         <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
                     </div>
 
-                    <input name="contact" class="form-control" placeholder="Phone number" type="text">
+                    <input name="contact" class="form-control" placeholder="Phone number" type="number">
                 </div> <!-- form-group// -->
 
                 <div class="form-group input-group">
@@ -75,7 +75,7 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                     </div>
-                    <input name="cabin_no" class="form-control" placeholder="Cabin no" type="text">
+                    <input name="word_no" class="form-control" placeholder="word no" type="text">
                 </div>
 
                 <div class="form-group input-group">

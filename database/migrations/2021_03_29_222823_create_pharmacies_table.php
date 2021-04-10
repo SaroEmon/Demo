@@ -14,11 +14,12 @@ class CreatePharmaciesTable extends Migration
     public function up()
     {
         Schema::create('pharmacies', function (Blueprint $table) {
-            $table->id('patient_id');
+            $table->id('id');
+            $table->string('patient_id')->unique();
             $table->string('name');
             $table->integer('contact');
             $table->string('department');
-            $table->string('description');
+            $table->string('password');
             $table->timestamps();
         });
     }
