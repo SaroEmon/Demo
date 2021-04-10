@@ -17,4 +17,19 @@ class PrescriptionsController extends Controller
     {
         return view('backend.layout.pms.prescriptions.prescriptionsCreate');
     }
+    public function prescriptionsList(Request $request)
+    {
+
+
+        Prescription::create([
+            'patient_id'=>$request->patientId,
+            'quantity'=>$request->quantity,
+            'consumption_amount'=>$request->amount,
+            'department'=>$request->department,
+            'date'=>$request->date,
+
+        ]);
+
+        return redirect()->route('medicines');
+    }
 }

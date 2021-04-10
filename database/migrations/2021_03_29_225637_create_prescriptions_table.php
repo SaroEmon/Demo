@@ -17,7 +17,8 @@ class CreatePrescriptionsTable extends Migration
             $table->id('id');
             $table->integer('patient_id');
             $table->integer('quantity');
-            $table->string('consumption_amount');
+            $table->integer('consumption_amount');
+            $table->string('department');
             $table->date('date');
             $table->timestamps();
         });

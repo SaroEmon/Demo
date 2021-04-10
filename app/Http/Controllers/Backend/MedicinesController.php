@@ -22,11 +22,11 @@ class MedicinesController extends Controller
 
 
         Medicine::create([
-            'patient_id'=>$request->patient_id,
-            'medicine_id'=>$request->medicine_id,
+            'patient_id'=>$request->patientId,
+            'medicine_id'=>$request->medicineId,
             'name'=>$request->name,
             'department'=>$request->department,
-            'password'=>$request->medicinepassword
+
         ]);
 
         return redirect()->route('medicines');

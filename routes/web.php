@@ -56,7 +56,7 @@ Route::post('/pharmacy/list',[PharmaciesController::class,'pharmaciesList'])->na
 //PRESCRIPTION
 Route::get('/prescriptions',[PrescriptionsController::class,'prescriptions'])->name('prescriptions');
 Route::get('/prescription/create',[PrescriptionsController::class,'prescriptionsCreate'])->name('prescriptions.create');
-
+Route::post('/prescriptions/list',[PrescriptionsController::class,'prescriptionsList'])->name('prescriptions.list');
 
 //PATIENT
 

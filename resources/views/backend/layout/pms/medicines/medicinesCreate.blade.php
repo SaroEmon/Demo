@@ -20,14 +20,14 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
                     </div>
-                    <input name="patient_id" class="form-control" placeholder="Patient ID" type="number">
+                    <input name="patientId" class="form-control" placeholder="Patient ID" type="number">
                 </div> <!-- form-group// -->
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
                     </div>
 
-                    <input name="medicine_id" class="form-control" placeholder="Medicine ID" type="number">
+                    <input name="medicineId" class="form-control" placeholder="Medicine ID" type="number">
                 </div> <!-- form-group// -->
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
