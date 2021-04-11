@@ -21,8 +21,29 @@ public function doctorsCreate()
 }
 public  function doctorsList(Request $request)
         {
+
+
+
+            $file_name="";
+            if ($request->hasFile('doctorImage'))
+            {
+
+                $file=$request->file('doctorImage');
+                if ($file->isValid())
+                {
+
+                    $file_name=date('Ymdms').".".$file->getClientOriginalExtension();
+                    $file->storeAs('doctors',$file_name);
+                }
+            }
+
+
+
+
+
             Doctor::create([
         'name'=>$request->name,
+            'image'=>$file_name,
             'email'=>$request->email,
             'contact'=>$request->contact,
             'gender'=>$request->gender,
@@ -42,5 +63,12 @@ public  function doctorsList(Request $request)
 
             return redirect()->route('doctors');
         }
+        public function doctordelete($id)
+        {
+            $doctor=Doctor::find($id);
+            $doctor->delete();
+            return redirect()->route('doctors')->with('success','Doctor Died successfully');
+        }
+
 
 }

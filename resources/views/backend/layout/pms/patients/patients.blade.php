@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('backend.welcome')
 @section('page')
     <!-- Button trigger modal -->
     <br>

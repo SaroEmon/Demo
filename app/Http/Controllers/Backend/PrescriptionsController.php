@@ -24,12 +24,12 @@ class PrescriptionsController extends Controller
         Prescription::create([
             'patient_id'=>$request->patientId,
             'quantity'=>$request->quantity,
-            'consumption_amount'=>$request->amount,
+            'consumption_amount'=>$request->consumptionAmount,
             'department'=>$request->department,
             'date'=>$request->date,
 
         ]);
 
-        return redirect()->route('medicines');
+        return redirect()->route('prescriptions');
     }
 }

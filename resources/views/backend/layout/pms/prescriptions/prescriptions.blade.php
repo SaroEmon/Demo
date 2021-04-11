@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('backend.welcome')
 @section('page')
     <!-- Button trigger modal -->
     <br>
@@ -8,11 +8,13 @@
     <table  class="table table-responsive table-bordered table-hover">
         <thead>
 
-        <th scope="col">PATIENT_ID</th>
-        <th scope="col">NAME</th>
-        <th scope="col">CONTACT</th>
+        <th scope="col">#ID</th>
+        <th scope="col">PATIENT ID</th>
+        <th scope="col">QUANTITY</th>
+        <th scope="col">AMOUNT</th>
         <th scope="col">DEPARTMENT</th>
-        <th scope="col">DESCRIPTION</th>
+        <th scope="col">DATE</th>
+
         <th scope="col">ACTION</th>
 
 
@@ -23,9 +25,11 @@
        @foreach($prescriptions as $data)
             <tr>
                 <th scope="row">{{$data->id}}</th>
-                <td>{{$data->patien_id}}</td>
                 <td>{{$data->quantity}}</td>
+                <td>{{$data->patient_id}}</td>
                 <td>{{$data->consumption_amount}}</td>
+                <td>{{$data->department}}</td>
+
                 <td>{{$data->date}}</td>
                 <td>
                     <a class="btn btn-success" href="">view</a>

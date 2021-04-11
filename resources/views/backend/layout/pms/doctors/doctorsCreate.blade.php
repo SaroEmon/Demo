@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('backend.welcome')
 @section('page')
 
     <div class="card bg-light">
@@ -7,7 +7,7 @@
 
 
 
-            <form action="{{route('doctors.list')}}" method="post">
+            <form action="{{route('doctors.list')}}" method="post" enctype="multipart/form-data">
 
                 @csrf
                 <div class="form-group input-group">
@@ -29,6 +29,19 @@
 
                     <input name="contact" class="form-control" placeholder="Phone number" type="text">
                 </div> <!-- form-group// -->
+
+
+{{--                PICTURE--}}
+                <div class="form-group">
+                    <label for="">Upload photo:</label><br>
+                    <input type="file" name="doctorImage" placeholder="please Select an Image">
+
+
+                </div>
+
+
+
+
 
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
