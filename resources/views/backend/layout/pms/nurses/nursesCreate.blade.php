@@ -30,6 +30,15 @@
                     <input name="contact" class="form-control" placeholder="Phone number" type="number">
                 </div> <!-- form-group// -->
 
+
+                {{--                PICTURE--}}
+                <div class="form-group">
+                    <label for="">Upload photo:</label><br>
+                    <input type="file" name="nurseImage" placeholder="please Select an Image">
+
+
+                </div>
+
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-building"></i> </span>

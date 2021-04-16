@@ -11,6 +11,7 @@ class PrescriptionsController extends Controller
     public function prescriptions()
     {
         $prescriptions=Prescription::all();
+        $prescriptions=Prescription::paginate(3);
         return view('backend.layout.pms.prescriptions.prescriptions',compact('prescriptions'));
     }
     public function prescriptionsCreate()

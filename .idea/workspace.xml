@@ -2,29 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee29f69c-498e-4ef8-ab8d-337d29236dfc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/receiptionist/receiptionistsCreate.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/welcome.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/receiptionists/receiptionists.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/receiptionists/receiptionistsCreate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/DoctorsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/DoctorsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/MedicinesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/MedicinesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/NursesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/NursesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/PatientsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/PatientsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/PrescriptionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/PrescriptionsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_28_031835_create_doctors_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_28_031835_create_doctors_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_29_225637_create_prescriptions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_29_225637_create_prescriptions_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/receiptionist/receiptionists.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Patient.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Patient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_29_202857_create_nurses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_29_202857_create_nurses_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/doctors/doctors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/doctors/doctors.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/doctors/doctorsCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/doctors/doctorsCreate.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/medicines/medicines.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/medicines/medicines.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/medicines/medicinesCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/medicines/medicinesCreate.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/nurses/nurses.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/nurses/nurses.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/nurses/nursesCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/nurses/nursesCreate.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/patients/patients.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/patients/patients.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/patients/patientsCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/patients/patientsCreate.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/pharmacies/pharmacies.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/pharmacies/pharmacies.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/pharmacies/pharmaciesCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/pharmacies/pharmaciesCreate.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/prescriptions/prescriptions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/prescriptions/prescriptions.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/prescriptions/prescriptionsCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/prescriptions/prescriptionsCreate.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/receiptionist/receiptionists.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/receiptionist/receiptionistsCreate.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/partials/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,6 +173,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\demo\app\Http\Controllers\Backend" />
       <recent name="G:\XAMP\htdocs\demo\app\Http\Controllers\Backend" />
       <recent name="G:\XAMP\htdocs\demo\resources\views\backend" />
     </key>
@@ -193,7 +194,16 @@
       <updated>1618066196618</updated>
       <workItem from="1618066197901" duration="2758000" />
       <workItem from="1618165697805" duration="36000" />
-      <workItem from="1618165735535" duration="11915000" />
+      <workItem from="1618165735535" duration="12167000" />
+      <workItem from="1618153807639" duration="12000" />
+      <workItem from="1618153821315" duration="173000" />
+      <workItem from="1618240390829" duration="4234000" />
+      <workItem from="1618285734653" duration="28000" />
+      <workItem from="1618326863226" duration="2235000" />
+      <workItem from="1618332368981" duration="8000" />
+      <workItem from="1618387224801" duration="250000" />
+      <workItem from="1618472261797" duration="3754000" />
+      <workItem from="1618588444217" duration="6360000" />
     </task>
     <servers />
   </component>

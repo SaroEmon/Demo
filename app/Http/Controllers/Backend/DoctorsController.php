@@ -12,6 +12,7 @@ class DoctorsController extends Controller
     {
 
         $doctors=Doctor::all();
+        $doctors =Doctor::paginate(2);
         return view('backend.layout.pms.doctors.doctors',compact('doctors'));
     }
 
@@ -47,7 +48,6 @@ public  function doctorsList(Request $request)
             'email'=>$request->email,
             'contact'=>$request->contact,
             'gender'=>$request->gender,
-            'password'=>$request->password,
                 'department'=>$request->department,
                 'address'=>$request->address,
                 'room_no'=>$request->room_no,
@@ -67,7 +67,7 @@ public  function doctorsList(Request $request)
         {
             $doctor=Doctor::find($id);
             $doctor->delete();
-            return redirect()->route('doctors')->with('success','Doctor Died successfully');
+            return redirect()->route('doctors')->with('success','Doctor Delete successfully');
         }
 
 

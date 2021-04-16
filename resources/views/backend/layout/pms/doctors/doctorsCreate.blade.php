@@ -97,12 +97,7 @@
                     </div>
                     <input  name="password" class="form-control" placeholder="Create password" type="password">
                 </div> <!-- form-group// -->
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                    </div>
-                    <input name="" class="form-control" placeholder="Repeat password" type="password">
-                </div> <!-- form-group// -->
+                 <!-- form-group// -->
                 <div class="form-group">
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-success" data-dismiss="modal">Close</button>

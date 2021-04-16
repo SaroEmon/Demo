@@ -32,7 +32,7 @@
 
     <li>
         <a href="#">
-            <i class="fas fa-user-md"></i> <span>Admin</span>
+            <i class="fas fa-user-md"></i> <span>Home</span>
         </a>
     </li>
     <li>
@@ -62,6 +62,12 @@
     <li>
         <a href="{{route('patients')}}">
             <i class="fas fa-user-md"></i> <span>Patients</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="{{route('receiptionists')}}">
+            <i class="fas fa-user-md"></i> <span>Receiptionist</span>
         </a>
     </li>
 

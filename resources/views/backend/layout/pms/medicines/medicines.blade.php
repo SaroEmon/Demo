@@ -2,7 +2,7 @@
 @section('page')
     <!-- Button trigger modal -->
     <br>
-    <center><a href="{{route('medicines.create')}}"><button type="button" class="btn btn-danger" >
+    <center><a href="{{route('medicines.create')}}"><button type="button" class="btn btn-info" >
                 ADD MEDICINES
             </button></a></center><br>
     <table  class="table table-responsive table-bordered table-hover">
@@ -28,7 +28,7 @@
                 <td>
                     <a class="btn btn-success" href="">view</a>
                     <a class="btn btn-info " href="">Edit</a>
-                    <a class="btn btn-danger" href="">Delete</a>
+                    <a class="btn btn-danger" href="{{route(medicine.delete,$data->id)}}">Delete</a>
 
                 </td>
 
@@ -49,6 +49,6 @@
 
     </table>
 
-
+{{$medicines->links()}}
 
 @stop

@@ -54,7 +54,7 @@
 
 
     </table>
-
+{{$prescriptions->links()}}
 
 
 @stop

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
-use App\Models\Nurse;
 use Illuminate\Http\Request;
 use App\Models\Medicine;
 
@@ -11,6 +10,7 @@ class MedicinesController extends Controller
 { public function medicines()
     {
         $medicines=Medicine::all();
+        $medicines=Medicine::paginate(3);
         return view('backend.layout.pms.medicines.medicines',compact('medicines'));
     }
     public function medicinesCreate()
@@ -30,6 +30,12 @@ class MedicinesController extends Controller
         ]);
 
         return redirect()->route('medicines');
+    }
+    public function medicinedelete($id)
+    {
+        $medicine=Medicine::find($id);
+        $medicine->delete();
+        return redirect()->route('medicine')->with('success','Medicine Delete successfully');
     }
 }
 
