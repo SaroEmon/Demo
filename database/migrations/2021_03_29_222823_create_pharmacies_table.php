@@ -17,7 +17,7 @@ class CreatePharmaciesTable extends Migration
             $table->id('id');
             $table->string('patient_id')->unique();
             $table->string('name');
-            $table->integer('contact');
+            $table->string('contact')->unique();
             $table->string('department');
             $table->string('password');
             $table->timestamps();

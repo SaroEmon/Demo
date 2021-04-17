@@ -16,12 +16,9 @@
                     </div>
                     <input name="name" class="form-control" placeholder="Medicine Name" type="text">
                 </div> <!-- form-group// -->
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
-                    </div>
-                    <input name="patientId" class="form-control" placeholder="Patient ID" type="number">
-                </div> <!-- form-group// -->
+
+
+                 <!-- form-group// -->
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-phone"></i> </span>

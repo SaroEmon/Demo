@@ -21,14 +21,14 @@
 
         @foreach ($medicines as $data)
             <tr>
-                <th scope="row">{{$data->patient_id}}</th>
+                <th scope="row">{{$data->id}}</th>
                 <td>{{$data->medicine_id}}</td>
                 <td>{{$data->name}}</td>
                 <td>{{$data->department}}</td>
                 <td>
                     <a class="btn btn-success" href="">view</a>
                     <a class="btn btn-info " href="">Edit</a>
-                    <a class="btn btn-danger" href="{{route(medicine.delete,$data->id)}}">Delete</a>
+                    <a class="btn btn-danger" href="{{route('medicine.delete',$data->id)}}">Delete</a>
 
                 </td>
 

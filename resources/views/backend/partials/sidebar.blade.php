@@ -3,25 +3,17 @@
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
         <!-- Sidebar user panel -->
-        <div class="user-panel">
-            <div class="pull-left image">
-                <img src="public/img/cover.jpg-160x160.jpg" class="img-circle" alt="User Image">
-            </div>
-            <div class="pull-left info">
-                <p>Saroar Hossain</p>
-                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-            </div>
-        </div>
+{{--        <div class="user-panel">--}}
+
+{{--            <div class="pull-left info">--}}
+{{--                <p>LOG IN</p>--}}
+
+{{--            </div>--}}
+{{--        </div>--}}
         <!-- search form -->
-        <form action="#" method="get" class="sidebar-form">
-            <div class="input-group">
-                <input type="text" name="q" class="form-control" placeholder="Search...">
-                <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                </button>
-              </span>
-            </div>
-        </form>
+
+
+
         <!-- /.search form -->
 
 
@@ -35,6 +27,9 @@
             <i class="fas fa-user-md"></i> <span>Home</span>
         </a>
     </li>
+
+
+
     <li>
         <a href="{{route('doctors')}}">
             <i class="fas fa-user-md"></i> <span>Doctor</span>
@@ -46,7 +41,7 @@
         </a>
     </li>
     <li>
-        <a href="{{route('medicines')}}">
+        <a href="{{route('medicines.view')}}">
             <i class="fas fa-user-md"></i> <span>Medicine</span>
         </a>
         <li>
@@ -66,13 +61,18 @@
     </li>
 
     <li>
-        <a href="{{route('receiptionists')}}">
-            <i class="fas fa-user-md"></i> <span>Receiptionist</span>
+        <a href="{{route('receptionists')}}">
+            <i class="fas fa-user-md"></i> <span>Receptionist</span>
         </a>
     </li>
 
     <li class="header">LABELS</li>
-    <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Information</span></a></li>
+    <li>
+        <a href="{{route('admins')}}">
+            <i class="fas fa-user-md"></i> <span>ADMIN</span>
+        </a>
+    </li>
+    <li><a href="{{route('adminLogin.view')}}"><i class="fa fa-circle-o text-yellow"></i> <span>LOG IN</span></a></li>
 </ul>
 </section>
 </aside>

@@ -7,7 +7,7 @@
 
 
 
-            <form action="{{route('nurses.list')}}" method="post">
+            <form action="{{route('nurses.list')}}" method="post"enctype="multipart/form-data">
 
                 @csrf
                 <div class="form-group input-group">

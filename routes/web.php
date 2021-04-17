@@ -10,7 +10,8 @@ use App\Http\Controllers\Backend\PrescriptionsController;
 use App\Http\Controllers\Backend\PatientsController;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Frontend\HomeController;
-use App\Http\Controllers\Backend\ReceiptionistsController;
+use App\Http\Controllers\Backend\ReceptionistsController;
+use App\Http\Controllers\Backend\AdminsController;
 
 
 
@@ -60,7 +61,7 @@ Route::group(['prefix'=>'admin'],function (){
 
 
 //MEDICINE
-        Route::get('/medicines', [MedicinesController::class, 'medicines'])->name('medicines');
+        Route::get('/medicines', [MedicinesController::class, 'medicines'])->name('medicines.view');
         Route::get('/medicines/create', [MedicinesController::class, 'medicinesCreate'])->name('medicines.create');
         Route::post('/medicines/list', [MedicinesController::class, 'medicinesList'])->name('medicines.list');
     Route::get('/medicine/delete/{id}',[MedicinesController::class,'medicineDelete'])->name('medicine.delete');
@@ -90,15 +91,36 @@ Route::group(['prefix'=>'admin'],function (){
         Route::get('/patient/delete/{id}',[PatientsController::class,'patientDelete'])->name('patient.delete');
 
 
-    //RECEIPTIONIST
+    //RECEPTIONIST
 
-    Route::get('/receiptionists', [ReceiptionistsController::class, 'receiptionists'])->name('receiptionists');
-    Route::get('/receiptionists/create', [ReceiptionistsController::class, 'receiptionistsCreate'])->name('receiptionists.create');
-    Route::post('/receiptionists/list', [ReceiptionistsController::class, 'receiptionistsList'])->name('receiptionists.list');
-    Route::get('/receiptionist/delete/{id}',[ReceiptionistsController::class,'receiptionistDelete'])->name('receiptionist.delete');
+    Route::get('/receptionists', [ReceptionistsController::class, 'receptionists'])->name('receptionists');
+    Route::get('/receptionists/create', [ReceptionistsController::class, 'receptionistsCreate'])->name('receptionists.create');
+    Route::post('/receptionists/list', [ReceptionistsController::class, 'receptionistsList'])->name('receptionists.list');
+    Route::get('/receptionist/delete/{id}',[ReceptionistsController::class,'receptionistDelete'])->name('receptionist.delete');
+
+
+//ADMIN
+    Route::get('/admins',[AdminsController::class,'admins'])->name('admins');
+    Route::get('/admins/create', [AdminsController::class, 'adminsCreate'])->name('admins.create');
+    Route::post('/admins/list', [AdminsController::class, 'adminsList'])->name('admins.list');
+    Route::get('/admin/delete/{id}',[AdminsController::class,'adminDelete'])->name('admin.delete');
+
+
+
+    //ADMIN LOGIN
+
+    Route::get('/adminLogin/form',[AdminsController::class,'adminlogin'])->name('adminLogin.view');
+    Route::post('/admin/login',[AdminsController::class,'loginValidation'])->name('admin.login');
+    Route::get('/admin/logout',[AdminsController::class,'adminLogout'])->name('admin.logout');
+
 
 
     });
+
+
+
+
+
 
 
 

@@ -22,20 +22,19 @@ class MedicinesController extends Controller
 
 
         Medicine::create([
-            'patient_id'=>$request->patientId,
             'medicine_id'=>$request->medicineId,
             'name'=>$request->name,
             'department'=>$request->department,
 
         ]);
 
-        return redirect()->route('medicines');
+        return redirect()->route('medicines.view');
     }
     public function medicinedelete($id)
     {
         $medicine=Medicine::find($id);
         $medicine->delete();
-        return redirect()->route('medicine')->with('success','Medicine Delete successfully');
+        return redirect()->route('medicines.view')->with('success','Medicine Delete successfully');
     }
 }
 
