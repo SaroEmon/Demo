@@ -2,7 +2,7 @@
 @section('page')
     <!-- Button trigger modal -->
     <br>
-    <center><a href="{{route('doctors.create')}}"><button type="button" class="btn btn-danger" >
+    <center><a href="{{route('doctors.create')}}"><button type="button" class="btn btn-warning" >
         Add Doctors
             </button></a></center><br>
 

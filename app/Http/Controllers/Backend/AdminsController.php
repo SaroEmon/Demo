@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Admin;
+use Illuminate\Support\Facades\Auth;
 
 class AdminsController extends Controller
 {
@@ -67,10 +68,11 @@ class AdminsController extends Controller
 
     public function loginValidation(Request $request)
     {
+//        dd($request->all());
         $request->validate([
 
-            'email' => 'required|email',
-            'password' => 'required|min:6'
+            'adminemail' => 'required|email',
+            'pass' => 'required|min:6'
         ]);
         $credentials = $request->only('email', 'password');
 //        dd($credentials);

@@ -46,11 +46,11 @@
 
 
 <span class="login100-form-title p-b-26">
-Welcome
+LOG IN
 </span>
-                <span class="login100-form-title p-b-48">
-<i class="zmdi zmdi-font"></i>
-</span>
+{{--                <span class="login100-form-title p-b-48">--}}
+{{--<i class="zmdi zmdi-font"></i>--}}
+{{--</span>--}}
                 <div class="wrap-input100 validate-input" data-validate="Valid email is: a@b.c">
                     <input class="input100" type="text" name="adminemail">
                     <span class="focus-input100" data-placeholder="Email"></span>
@@ -102,11 +102,11 @@ Don’t have an account?
 <script src="https://colorlib.com/etc/lf/Login_v2/vendor/select2/select2.min.js"></script>
 
 <script src="https://colorlib.com/etc/lf/Login_v2/vendor/daterangepicker/moment.min.js"></script>
-<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<script src="https://colorlib.com/etc/lf/Login_v2/vendor/daterangepicker/daterangepicker.js"></script>
 
-<script src="vendor/countdowntime/countdowntime.js"></script>
+<script src="https://colorlib.com/etc/lf/Login_v2/vendor/countdowntime/countdowntime.js"></script>
 
-<script src="js/main.js"></script>
+<script src="https://colorlib.com/etc/lf/Login_v2/js/main.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 <script>
