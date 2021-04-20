@@ -4,9 +4,8 @@
     <list default="true" id="ee29f69c-498e-4ef8-ab8d-337d29236dfc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/AdminsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/AdminsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/doctors/doctors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/doctors/doctors.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/admins/admins.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/admins/admins.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/login/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/login/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/login/loginList.blade.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,6 +187,10 @@
       <workItem from="1618635987746" duration="18255000" />
       <workItem from="1618674869927" duration="1803000" />
       <workItem from="1618726638215" duration="3806000" />
+      <workItem from="1618812528567" duration="2736000" />
+      <workItem from="1618852901463" duration="11000" />
+      <workItem from="1618916087023" duration="1087000" />
+      <workItem from="1618935021131" duration="1475000" />
     </task>
     <servers />
   </component>

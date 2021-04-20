@@ -46,7 +46,7 @@ class AdminsController extends Controller
             'gender' => $request->gender,
             'shift' => $request->shift,
             'address' => $request->address,
-            'password' => $request->password
+            'password' => bcrypt($request->password)
 
 
         ]);
@@ -72,11 +72,11 @@ class AdminsController extends Controller
         $request->validate([
 
             'adminemail' => 'required|email',
-            'pass' => 'required|min:6'
+            'adminpassword' => 'required|min:6'
         ]);
-        $credentials = $request->only('email', 'password');
-//        dd($credentials);
-        if (Auth::attempt($credentials)) {
+        $admin_login = $request->only('email', 'password');
+        dd($admin_login);
+        if (Auth::attempt($admin_login)) {
             $request->session()->regenerate();
             return redirect()->route('home');
         }

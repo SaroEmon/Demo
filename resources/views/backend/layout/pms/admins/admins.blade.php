@@ -3,7 +3,7 @@
     <!-- Button trigger modal -->
     <br>
     <center><a href="{{route('admins.create')}}"><button type="button" class="btn btn-info" >
-                ADD RECEPTIONIST
+                ADD ADMIN
             </button></a></center><br>
 
 
