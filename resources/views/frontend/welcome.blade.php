@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Medilab Bootstrap Template - Index</title>
+    <title>Medilab Hospital Bangladesh</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -59,7 +59,7 @@
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-        <h1 class="logo me-auto"><a href="index.html">PMS</a></h1>
+        <h1 class="logo me-auto"><a href="index.html">Medilab Diagnostic Centre</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -163,7 +163,7 @@
 
             <div class="row">
                 <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
-                    <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
+                    <a href="" class="glightbox -btn mb-4"></a>
                 </div>
 
                 <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
@@ -203,7 +203,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="count-box">
                         <i class="fas fa-user-md"></i>
-                        <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+                        <span data-purecounter-start="0" data-purecounter-end="{{$doctors->count()}}" data-purecounter-duration="1" class="purecounter"></span>
                         <p>Doctors</p>
                     </div>
                 </div>
@@ -300,6 +300,9 @@
         </div>
     </section><!-- End Services Section -->
 
+
+
+
     <!-- ======= Appointment Section ======= -->
     <section id="appointment" class="appointment section-bg">
         <div class="container">
@@ -338,7 +341,13 @@
                         </select>
                         <div class="validate"></div>
                     </div>
-                    <div class="col-md-4 form-group mt-3">
+
+
+
+
+{{--                    @foreach($doctors as $data)--}}
+                    <div
+                        class="col-md-4 form-group mt-3">
                         <select name="doctor" id="doctor" class="form-select">
                             <option value="">Select Doctor</option>
                             <option value="Doctor 1">Doctor 1</option>
@@ -347,6 +356,10 @@
                         </select>
                         <div class="validate"></div>
                     </div>
+{{--                    @endforeach--}}
+
+
+
                 </div>
 
                 <div class="form-group mt-3">
@@ -480,13 +493,14 @@
             </div>
 
             <div class="row">
+    @foreach($doctors as $data)
 
                 <div class="col-lg-6">
                     <div class="member d-flex align-items-start">
                         <div class="pic"><img src="{{asset("frontend")}}/assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
                         <div class="member-info">
-                            <h4>Walter White</h4>
-                            <span>Chief Medical Officer</span>
+                            <h4>{{$data->name}}</h4>
+                            <span>{{$data->department}}</span>
                             <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                             <div class="social">
                                 <a href=""><i class="ri-twitter-fill"></i></a>
@@ -498,56 +512,12 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 mt-4 mt-lg-0">
-                    <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="{{asset("frontend")}}/assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Sarah Jhonson</h4>
-                            <span>Anesthesiologist</span>
-                            <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                            <div class="social">
-                                <a href=""><i class="ri-twitter-fill"></i></a>
-                                <a href=""><i class="ri-facebook-fill"></i></a>
-                                <a href=""><i class="ri-instagram-fill"></i></a>
-                                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
 
-                <div class="col-lg-6 mt-4">
-                    <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="{{asset("frontend")}}/assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>William Anderson</h4>
-                            <span>Cardiology</span>
-                            <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                            <div class="social">
-                                <a href=""><i class="ri-twitter-fill"></i></a>
-                                <a href=""><i class="ri-facebook-fill"></i></a>
-                                <a href=""><i class="ri-instagram-fill"></i></a>
-                                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-6 mt-4">
-                    <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="{{asset("frontend")}}/assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Amanda Jepson</h4>
-                            <span>Neurosurgeon</span>
-                            <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                            <div class="social">
-                                <a href=""><i class="ri-twitter-fill"></i></a>
-                                <a href=""><i class="ri-facebook-fill"></i></a>
-                                <a href=""><i class="ri-instagram-fill"></i></a>
-                                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+
+
 
             </div>
 
@@ -677,18 +647,18 @@
                         <div class="address">
                             <i class="bi bi-geo-alt"></i>
                             <h4>Location:</h4>
-                            <p>A108 Adam Street, New York, NY 535022</p>
+                            <p> Street #08,Sector #06,Uttara,Dhaka,Bangladesh</p>
                         </div>
 
                         <div class="email">
                             <i class="bi bi-envelope"></i>
                             <h4>Email:</h4>
-                            <p>info@example.com</p>
+                            <p>medilabbd@info.com</p>
                         </div>
 
                         <div class="phone">
                             <i class="bi bi-phone"></i>
-                            <h4>Call:</h4>
+                            <h4>Cell:</h4>
                             <p>+1 5589 55488 55s</p>
                         </div>
 
@@ -739,7 +709,7 @@
 
         <div class="me-md-auto text-center text-md-start">
             <div class="copyright">
-                &copy; Copyright <strong><span>Medilab</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Medilab</span></strong>. All Rights Reserved | 2021
             </div>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
