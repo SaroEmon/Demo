@@ -37,7 +37,7 @@
 
 
 
-            <form  action="{{route('admin.login')}}" class="login100-form validate-form p-l-55 p-r-55 p-t-178">
+            <form  action="{{route('admin.login')}}" method="post" class="login100-form validate-form p-l-55 p-r-55 p-t-178">
                 @csrf
 
 
@@ -56,14 +56,14 @@ LOG IN
 
 
 
-                
+
 
                 <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
-                    <input class="input100" type="text" name="adminemail" placeholder="Username">
+                    <input class="input100" type="text" name="email" placeholder="Username">
                     <span class="focus-input100"></span>
                 </div>
                 <div class="wrap-input100 validate-input" data-validate="Please enter password">
-                    <input class="input100" type="password" name="adminpassword" placeholder="Password">
+                    <input class="input100" type="password" name="password" placeholder="Password">
                     <span class="focus-input100"></span>
                 </div>
                 <div class="text-right p-t-13 p-b-23">

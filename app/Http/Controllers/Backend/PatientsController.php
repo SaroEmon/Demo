@@ -29,8 +29,8 @@ class PatientsController extends Controller
 
 
         Patient::create([
-            'name' => $request->name,
-            'email' => $request->email,
+            'patientname' => $request->patientname,
+            'patientemail' => $request->patientemail,
             'contact' => $request->contact,
             'gender' => $request->gender,
             'department' => $request->department,

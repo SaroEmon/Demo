@@ -71,11 +71,11 @@ class AdminsController extends Controller
 //        dd($request->all());
         $request->validate([
 
-            'adminemail' => 'required|email',
-            'adminpassword' => 'required|min:6'
+            'email' => 'required|email',
+            'password' => 'required|min:6'
         ]);
         $admin_login = $request->only('email', 'password');
-        dd($admin_login);
+//        dd($admin_login);
         if (Auth::attempt($admin_login)) {
             $request->session()->regenerate();
             return redirect()->route('home');

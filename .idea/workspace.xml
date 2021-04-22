@@ -4,8 +4,15 @@
     <list default="true" id="ee29f69c-498e-4ef8-ab8d-337d29236dfc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/AdminsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/AdminsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/admins/admins.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/admins/admins.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/PatientsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/PatientsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_29_232006_create_patients_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_29_232006_create_patients_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/doctors/202104150404.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/login/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/login/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/nurses/nursesCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/nurses/nursesCreate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/patients/patientsCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/patients/patientsCreate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/receptionists/receptionistsCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/receptionists/receptionistsCreate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +197,8 @@
       <workItem from="1618812528567" duration="2736000" />
       <workItem from="1618852901463" duration="11000" />
       <workItem from="1618916087023" duration="1087000" />
-      <workItem from="1618935021131" duration="1475000" />
+      <workItem from="1618935021131" duration="2103000" />
+      <workItem from="1619070168849" duration="12075000" />
     </task>
     <servers />
   </component>
