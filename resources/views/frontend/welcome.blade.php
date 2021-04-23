@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Medilab Hospital Bangladesh</title>
+    <title>MediCare Bangladesh</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -59,7 +59,7 @@
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-        <h1 class="logo me-auto"><a href="index.html">Medilab Diagnostic Centre</a></h1>
+        <h1 class="logo me-auto"><a href="index.html">MediCare</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -100,8 +100,8 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex align-items-center">
     <div class="container">
-        <h1>Welcome to Medilab</h1>
-        <h2>We are team of talented designers making websites with Bootstrap</h2>
+        <h1>Welcome to MediCare</h1>
+        <h2>We’re here to help you get better, feel better, and stay better.</h2>
         <a href="#about" class="btn-get-started scrollto">Get Started</a>
     </div>
 </section><!-- End Hero -->
@@ -115,10 +115,11 @@
             <div class="row">
                 <div class="col-lg-4 d-flex align-items-stretch">
                     <div class="content">
-                        <h3>Why Choose Medilab?</h3>
+                        <h3>Why Choose MediCare?</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                            Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+                            We’ve made it our mission to support all kinds of movement: for every patients, at every stage. Movement matters when it comes to enjoying life.
+
+                            We want to guide you , or recovery, so you can come back to your normal lifestyle. Whether it’s improving, maintaining or optimising your condition, we’re here to help.
                         </p>
                         <div class="text-center">
                             <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
@@ -131,22 +132,22 @@
                             <div class="col-xl-4 d-flex align-items-stretch">
                                 <div class="icon-box mt-4 mt-xl-0">
                                     <i class="bx bx-receipt"></i>
-                                    <h4>Corporis voluptates sit</h4>
-                                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                                    <h4>Services & clinics</h4>
+                                    <p>We offer a range of services and clinics for our patients - people staying in hospital (inpatients) as well as people coming in for treatment (outpatients).</p>
                                 </div>
                             </div>
                             <div class="col-xl-4 d-flex align-items-stretch">
                                 <div class="icon-box mt-4 mt-xl-0">
                                     <i class="bx bx-cube-alt"></i>
-                                    <h4>Ullamco laboris ladore pan</h4>
-                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                                    <h4>Online Telehealth Service</h4>
+                                    <p>With Telehealth, you don't have to travel for your appointments, so you can attend a clinic appointment via online while you're at home, work, or with your local health care practitioner.</p>
                                 </div>
                             </div>
                             <div class="col-xl-4 d-flex align-items-stretch">
                                 <div class="icon-box mt-4 mt-xl-0">
                                     <i class="bx bx-images"></i>
-                                    <h4>Labore consequatur</h4>
-                                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                                    <h4>COVID-19 information</h4>
+                                    <p>The MediCare Bangladesh has extensive processes in place to safely assess and manage any patients with viral infections, including the novel coronavirus, COVID-19.</p>
                                 </div>
                             </div>
                         </div>
@@ -167,25 +168,32 @@
                 </div>
 
                 <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-                    <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
+                    <h3>Virtual Care</h3>
                     <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
 
                     <div class="icon-box">
-                        <div class="icon"><i class="bx bx-fingerprint"></i></div>
-                        <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                        <div class="icon"><i class="bx bx-phone-call"></i></div>
+                        <h4 class="title"><a href="">Telephone Visits</a></h4>
+                        <p class="description">Telephone visits are visits with your doctor over the phone instead of face to face. Your doctor calls you at the scheduled time at the number you give us.
+                            Our MediCare Hospitals providers offer telephone appointments.
+                            Call 1-844-692-4692 to request a telephone visit with your doctor.
+                            If you are already signed up for MyChart, you can also schedule a telephone visit online.
+                        </p>
                     </div>
 
                     <div class="icon-box">
-                        <div class="icon"><i class="bx bx-gift"></i></div>
-                        <h4 class="title"><a href="">Nemo Enim</a></h4>
-                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                        <div class="icon"><i class="bx bx-chat"></i></div>
+                        <h4 class="title"><a href="">MyChart Patient Portal</a></h4>
+                        <p class="description">MyChart is MediCare Hospitals’ patient portal. It is a free and secure online tool where you can view and manage your health information at any time. It is the best way to connect with your doctor and health care providers from home.</p>
                     </div>
 
                     <div class="icon-box">
-                        <div class="icon"><i class="bx bx-atom"></i></div>
-                        <h4 class="title"><a href="">Dine Pad</a></h4>
-                        <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+                        <div class="icon"><i class="bx bx-video"></i></div>
+                        <h4 class="title"><a href="">Video Visits</a></h4>
+                        <p class="description">A video visit is a video chat with your doctor. Instead of traveling to see your doctor in-person, you can have your appointment with them from home, work, or another convenient location.
+                            MediCare Hospitals doctors, therapists, and other care providers now offer secure and confidential video visits.
+                            Speak to your doctor to learn if they offer video visits.
+                            Our video visits are done through ZOOM/Google Meet.</p>
                     </div>
 
                 </div>
@@ -243,55 +251,55 @@
 
             <div class="section-title">
                 <h2>Services</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <p>We understand the importance of your movement. It could mean reaching a new personal best, or building the strength to support an active future. Through our holistic range of services, we support your unique challenges and opportunities so you can get the most out of life.</p>
             </div>
 
             <div class="row">
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                     <div class="icon-box">
                         <div class="icon"><i class="fas fa-heartbeat"></i></div>
-                        <h4><a href="">Lorem Ipsum</a></h4>
-                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        <h4><a href="">COVID-19 Vaccines</a></h4>
+                        <p>MediCare is a leader in COVID-19 testing and now COVID-19 vaccination across Bangladesh. We offer the vaccine to our employees, other health care workers in the community, essential workers, New Yorkers 16 years of age and older, New Yorkers with a variety of medical conditions such as cancer, diabetes, HIV and more. </p>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
                     <div class="icon-box">
                         <div class="icon"><i class="fas fa-pills"></i></div>
-                        <h4><a href="">Sed ut perspiciatis</a></h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                        <h4><a href="">Primary and Preventive Care</a></h4>
+                        <p>MediCare treats routine illnesses and improving your health. Our compassionate team of primary and preventive health care experts will also help with challenging health issues by referring you or your family members to our team of specialists.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
                     <div class="icon-box">
                         <div class="icon"><i class="fas fa-hospital-user"></i></div>
-                        <h4><a href="">Magni Dolores</a></h4>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                        <h4><a href="">Pregnancy and Postnatal Physiotherapy</a></h4>
+                        <p>Pregnancy and Postnatal Physiotherapy is a specific branch of Women’s Health and Continence Physiotherapy. Women’s Health and Continence Physiotherapists have skills to assess and support specific conditions.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                     <div class="icon-box">
                         <div class="icon"><i class="fas fa-dna"></i></div>
-                        <h4><a href="">Nemo Enim</a></h4>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                        <h4><a href="">Long Term Care</a></h4>
+                        <p>MediCare is here when patients need caring support and rehabilitation following an accident or surgery. We’re here when elderly patients need to depend on a residential nursing facility to live safely, happily and with dignity. We’re here for those with long-term disabilities who require dedicated skilled nursing care for daily activities.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                     <div class="icon-box">
                         <div class="icon"><i class="fas fa-wheelchair"></i></div>
-                        <h4><a href="">Dele cardo</a></h4>
-                        <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+                        <h4><a href="">Emergency Services</a></h4>
+                        <p>MediCare provides comprehensive and compassionate emergency room care when you or a loved one need it most, regardless of anyone’s ability to pay.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                     <div class="icon-box">
                         <div class="icon"><i class="fas fa-notes-medical"></i></div>
-                        <h4><a href="">Divera don</a></h4>
-                        <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+                        <h4><a href="">Medical & Surgical</a></h4>
+                        <p>We have the most comprehensive medical services in the state, with expert care covering a wide range of illnesses plus emergency and elective surgery, ensuring our community receives the care they need.</p>
                     </div>
                 </div>
 
@@ -335,9 +343,14 @@
                     <div class="col-md-4 form-group mt-3">
                         <select name="department" id="department" class="form-select">
                             <option value="">Select Department</option>
-                            <option value="Department 1">Department 1</option>
-                            <option value="Department 2">Department 2</option>
-                            <option value="Department 3">Department 3</option>
+
+                            @foreach($doctors as $data)
+
+                            <option value="Department 1">{{$data->department}}</option>
+
+                            @endforeach
+
+
                         </select>
                         <div class="validate"></div>
                     </div>
@@ -345,18 +358,20 @@
 
 
 
-{{--                    @foreach($doctors as $data)--}}
+
                     <div
                         class="col-md-4 form-group mt-3">
                         <select name="doctor" id="doctor" class="form-select">
                             <option value="">Select Doctor</option>
-                            <option value="Doctor 1">Doctor 1</option>
-                            <option value="Doctor 2">Doctor 2</option>
-                            <option value="Doctor 3">Doctor 3</option>
+                            @foreach($doctors as $data)
+
+                            <option value="{{$data->id}}">{{$data->name}}</option>
+
+                            @endforeach
+
                         </select>
                         <div class="validate"></div>
                     </div>
-{{--                    @endforeach--}}
 
 
 
@@ -483,6 +498,8 @@
         </div>
     </section><!-- End Departments Section -->
 
+
+
     <!-- ======= Doctors Section ======= -->
     <section id="doctors" class="doctors">
         <div class="container">
@@ -497,7 +514,7 @@
 
                 <div class="col-lg-6">
                     <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="{{asset("frontend")}}/assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
+                        <div class="pic"><img src="{{url('/img/doctors/',$data->image)}}" class="img-fluid" alt=""></div>
                         <div class="member-info">
                             <h4>{{$data->name}}</h4>
                             <span>{{$data->department}}</span>
@@ -522,10 +539,10 @@
             </div>
 
         </div>
-    </section><!-- End Doctors Section -->
+    </section>
+    <!-- End Doctors Section -->
 
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <!-- End Frequently Asked Questions Section -->
+
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
@@ -645,19 +662,19 @@
                 <div class="col-lg-4">
                     <div class="info">
                         <div class="address">
-                            <i class="bi bi-geo-alt"></i>
+                            <i class="fa fa-location-arrow"></i>
                             <h4>Location:</h4>
                             <p> Street #08,Sector #06,Uttara,Dhaka,Bangladesh</p>
                         </div>
 
                         <div class="email">
-                            <i class="bi bi-envelope"></i>
+                            <i class="fa fa-envelope"></i>
                             <h4>Email:</h4>
-                            <p>medilabbd@info.com</p>
+                            <p>MediCarebd@info.com</p>
                         </div>
 
                         <div class="phone">
-                            <i class="bi bi-phone"></i>
+                            <i class="fa fa-phone"></i>
                             <h4>Cell:</h4>
                             <p>+1 5589 55488 55s</p>
                         </div>

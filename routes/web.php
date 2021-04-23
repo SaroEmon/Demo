@@ -115,6 +115,12 @@ Route::group(['prefix'=>'admin'],function (){
 
 
 
+
+    //APPOINTMENT LIST
+//    Route::get('/appointments',[App])
+
+
+
     });
 
 
