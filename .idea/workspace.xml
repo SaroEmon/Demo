@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee29f69c-498e-4ef8-ab8d-337d29236dfc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/appointments/appointmentCreate.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/appointments/appointmentList.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/ApointmentController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_23_092505_create_appointment_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/appointments/appointmentCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/appointments/appointmentCreate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/appointments/appointmentList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/appointments/appointmentList.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/doctors/doctorsCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/doctors/doctorsCreate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/partials/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -196,6 +200,10 @@
       <workItem from="1619109401028" duration="6142000" />
       <workItem from="1619167129342" duration="5774000" />
       <workItem from="1619197055962" duration="6280000" />
+      <workItem from="1619241766689" duration="6179000" />
+      <workItem from="1619282870866" duration="2400000" />
+      <workItem from="1619330425618" duration="1817000" />
+      <workItem from="1619456460106" duration="1476000" />
     </task>
     <servers />
   </component>

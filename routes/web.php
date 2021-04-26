@@ -12,6 +12,8 @@ use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Backend\ReceptionistsController;
 use App\Http\Controllers\Backend\AdminsController;
+use App\Http\Controllers\Backend\AppointmentController;
+
 
 
 
@@ -117,9 +119,10 @@ Route::group(['prefix'=>'admin'],function (){
 
 
     //APPOINTMENT LIST
-//    Route::get('/appointments',[App])
-
-
+    Route::get('/appointments', [AppointmentController::class, 'appointments'])->name('appointments');
+    Route::get('/appointments/create', [AppointmentController::class, 'appointmentsCreate'])->name('appointments.create');
+    Route::post('/appointments/list', [AppointmentController::class, 'appointmentsList'])->name('appointments.list');
+    Route::get('/appointment/delete/{id}',[AppointmentController::class,'appointmentDelete'])->name('appointment.delete');
 
     });
 

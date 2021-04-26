@@ -7,7 +7,7 @@
 
 
 
-            <form action="{{route('doctors.list')}}" method="post" enctype="multipart/form-data">
+            <form action="{{route('appointments.list')}}" method="post" enctype="multipart/form-data">
 
                 @csrf
                 <div class="form-group input-group">
@@ -27,32 +27,14 @@
                         <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
                     </div>
 
-                    <input name="contact" class="form-control" placeholder="Phone number" type="text">
+                    <input name="patientContact" class="form-control" placeholder="Phone number" type="text">
                 </div> <!-- form-group// -->
 
-
-                {{--                PICTURE--}}
-                <div class="form-group">
-                    <label for="">Upload photo:</label><br>
-                    <input type="file" name="doctorImage" placeholder="please Select an Image">
-
-
-                </div>
-
-
-
-
-
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                     </div>
-                    <select name="gender" class="form-control">
-                        <option selected=""> Select Gender</option>
-                        <option value="male">Male</option>
-                        <option value="female"> Female</option>
-
-                    </select>
+                    <input name="doctorId" class="form-control" placeholder="Doctor ID" type="text">
                 </div>
 
 
@@ -62,7 +44,7 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-building"></i> </span>
                     </div>
-                    <select name="department" class="form-control">
+                    <select name="department_id" class="form-control">
                         <option selected=""> Select Department</option>
                         <option value="medicine">Medicine</option>
                         <option value="physiology"> Physiology</option>
@@ -81,28 +63,18 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                     </div>
-                    <input name="address" class="form-control" placeholder="Address" type="text">
+                    <input name="date" class="form-control" placeholder="date" type="date">
                 </div>
 
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                    </div>
-                    <input name="room_no" class="form-control" placeholder="Room no" type="text">
-                </div>
 
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                    </div>
-                    <input  name="password" class="form-control" placeholder="Create password" type="password">
-                </div> <!-- form-group// -->
+                <!-- form-group// -->
                 <!-- form-group// -->
                 <div class="form-group">
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-success" data-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-primary">Save changes</button>
                     </div>
+                </div>
             </form>
         </article>
 
