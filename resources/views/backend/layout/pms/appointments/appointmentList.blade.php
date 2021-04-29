@@ -2,7 +2,7 @@
 @section('page')
     <!-- Button trigger modal -->
     <br>
-    <center><a href="{{route('receptionists.create')}}"><button type="button" class="btn btn-info" >
+    <center><a href="{{route('appointments.create')}}"><button type="button" class="btn btn-info" >
                 ADD APPOINTMENT
             </button></a></center><br>
 

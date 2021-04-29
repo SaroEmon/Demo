@@ -54,12 +54,49 @@ class AdminsController extends Controller
         return redirect()->route('admins');
     }
 
+
+
+
     public function admindelete($id)
     {
         $admin = Admin::find($id);
         $admin->delete();
         return redirect()->route('admins')->with('success', 'Admin Delete successfully');
     }
+
+
+
+
+
+    public function adminEdit($id)
+    {
+        $admin= Admin::find($id);
+        return view ('backend.layout.pms.admins.adminsEdit', compact('admin'));
+    }
+
+    public function adminUpdate(Request $request,$id)
+    {
+        Admin::find($id)->update([
+            'name' => $request->name,
+//            'image' => $file_name,
+            'email' => $request->email,
+            'contact' => $request->contact,
+            'gender' => $request->gender,
+            'shift' => $request->shift,
+            'address' => $request->address,
+            'password' => bcrypt($request->password)
+        ]);
+        return redirect()->route('admins')->with('success', 'Admin Updated successfully');
+    }
+
+
+
+
+
+
+
+
+
 
     public function adminlogin()
     {

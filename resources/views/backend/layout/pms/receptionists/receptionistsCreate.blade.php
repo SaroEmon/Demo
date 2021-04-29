@@ -100,7 +100,9 @@
                         <button type="submit" class="btn btn-success" data-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-primary">Save changes</button>
                     </div>
+                    </div>
             </form>
+
         </article>
 
 

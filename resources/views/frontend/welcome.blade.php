@@ -506,7 +506,7 @@
 
             <div class="section-title">
                 <h2>Doctors</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <p></p>
             </div>
 
             <div class="row">
@@ -518,7 +518,12 @@
                         <div class="member-info">
                             <h4>{{$data->name}}</h4>
                             <span>{{$data->department}}</span>
-                            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                            <p> </p>
+
+
+                            <br>
+
+                            <br>
                             <div class="social">
                                 <a href=""><i class="ri-twitter-fill"></i></a>
                                 <a href=""><i class="ri-facebook-fill"></i></a>
@@ -546,7 +551,10 @@
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
-        <div class="container">
+        <div class="container"><div class="section-title">
+                <h2>Comments</h2>
+                <p></p>
+            </div>
 
             <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
@@ -554,9 +562,10 @@
                     <div class="swiper-slide">
                         <div class="testimonial-wrap">
                             <div class="testimonial-item">
-                                <img src="{{asset("frontend")}}/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                                <h3>Saul Goodman</h3>
-                                <h4>Ceo &amp; Founder</h4>
+                                <img src="{{url('/img/commentors/comment 1.jpg')}}" class="testimonial-img" alt="">
+                                <h3>Akash Khairul</h3>
+                                <h4>Managing Director</h4>
+                                <h5>City Bank Ltd</h5>
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                                     Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
@@ -569,9 +578,9 @@
                     <div class="swiper-slide">
                         <div class="testimonial-wrap">
                             <div class="testimonial-item">
-                                <img src="{{asset("frontend")}}/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                                <h3>Sara Wilsson</h3>
-                                <h4>Designer</h4>
+                                <img src="{{url('/img/commentors/comment 2.jpg')}}" class="testimonial-img" alt="">
+                                <h3>Mohammad Shamim</h3>
+                                <h4>Student</h4>
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                                     Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
@@ -584,12 +593,12 @@
                     <div class="swiper-slide">
                         <div class="testimonial-wrap">
                             <div class="testimonial-item">
-                                <img src="{{asset("frontend")}}/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                                <h3>Jena Karlis</h3>
-                                <h4>Store Owner</h4>
+                                <img src="{{url('/img/commentors/comment 5.jpg')}}" class="testimonial-img" alt="">
+                                <h3>Anisa Nodi</h3>
+                                <h4>Web Developer</h4>
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
                             </div>
@@ -599,8 +608,8 @@
                     <div class="swiper-slide">
                         <div class="testimonial-wrap">
                             <div class="testimonial-item">
-                                <img src="{{asset("frontend")}}/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                                <h3>Matt Brandon</h3>
+                                <img src="{{url('/img/commentors/comment 4.jpg')}}" class="testimonial-img" alt="">
+                                <h3>Nabil Ahsan</h3>
                                 <h4>Freelancer</h4>
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -614,9 +623,9 @@
                     <div class="swiper-slide">
                         <div class="testimonial-wrap">
                             <div class="testimonial-item">
-                                <img src="{{asset("frontend")}}/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                                <h3>John Larson</h3>
-                                <h4>Entrepreneur</h4>
+                                <img src="{{url('/img/commentors/comment 5.jpg')}}" class="testimonial-img" alt="">
+                                <h3>Sharmin Shejuti</h3>
+                                <h4>Banker</h4>
                                 <p>
                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                                     Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.

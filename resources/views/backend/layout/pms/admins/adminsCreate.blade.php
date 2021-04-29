@@ -80,18 +80,13 @@
                     <input name="address" class="form-control" placeholder="Address" type="text">
                 </div>
 
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                    </div>
-                    <input name="room_no" class="form-control" placeholder="Room no" type="text">
-                </div>
+
 
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                     </div>
-                    <input  name="password" class="form-control" placeholder="Create password" type="password">
+                    <input value="{{}}" name="password" class="form-control" placeholder="Create password" type="password">
                 </div> <!-- form-group// -->
                  <!-- form-group// -->
                 <div class="form-group">
@@ -99,6 +94,7 @@
                         <button type="submit" class="btn btn-success" data-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-primary">Save changes</button>
                     </div>
+                </div>
             </form>
         </article>
 

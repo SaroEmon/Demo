@@ -70,5 +70,21 @@ public  function doctorsList(Request $request)
             return redirect()->route('doctors')->with('success','Doctor Delete successfully');
         }
 
+        public function search(Request $request)
+        {
+            $search=$request->search();
+            if ($search){
+              $doctors=Doctor::where('name','like','%','.$search.','%')
+                        ->orwhere('email','like','%','.$search.','%')-> paginate(3);
+
+            }else
+            {
+                $doctors=Doctor::with('doctors');
+            }
+
+            $title="earch Result";
+            return view('backend.layout.pms.doctors',compact('title','doctors','search'));
+        }
+
 
 }

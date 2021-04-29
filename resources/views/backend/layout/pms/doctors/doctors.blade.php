@@ -18,6 +18,37 @@
 
 
 
+
+
+{{--    //Search Panel--}}
+
+    <div class="row-cols-4">
+    <div class="col-md-4">
+    <div class="col-md-3">
+    <div class="col-md-2">
+
+
+        <form action="{{route('doctor.search')}}"method="POST">
+        @csrf
+        <input name="search" type="text" placeholder="search" class="form-control">
+        <button type="submit" class="btn btn-info">Search </button>
+
+
+        </form>
+
+    </div>
+    </div>
+
+
+
+        {{--    //End Search Panel--}}
+
+
+
+
+
+
+
     <table  class="table table-responsive table-bordered table-hover">
         <thead>
 

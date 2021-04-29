@@ -51,6 +51,7 @@ Route::group(['prefix'=>'admin'],function (){
         Route::get('/doctors/create', [DoctorsController::class, 'doctorsCreate'])->name('doctors.create');
         Route::post('/doctors/list', [DoctorsController::class, 'doctorsList'])->name('doctors.list');
         Route::get('/doctor/delete/{id}',[DoctorsController::class,'doctorDelete'])->name('doctor.delete');
+        Route::post('/doctor/search',[DoctorsController::class,'search'])->name('doctor.search');
 
 
 //NURSE
@@ -106,6 +107,8 @@ Route::group(['prefix'=>'admin'],function (){
     Route::get('/admins/create', [AdminsController::class, 'adminsCreate'])->name('admins.create');
     Route::post('/admins/list', [AdminsController::class, 'adminsList'])->name('admins.list');
     Route::get('/admin/delete/{id}',[AdminsController::class,'adminDelete'])->name('admin.delete');
+    Route::get('/admin/edit/{id}',[AdminsController::class,'adminEdit'])->name('admin.edit');
+    Route::put('/admin/update/{id}',[AdminsController::class,'adminUpdate'])->name('admin.update');
 
 
 

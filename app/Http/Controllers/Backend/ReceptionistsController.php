@@ -11,7 +11,7 @@ class ReceptionistsController extends Controller
     public function receptionists()
     {
         $receptionists = Receptionist::all();
-        $receptionists=Receptionist::paginate(3);
+        $receptionists=Receptionist::paginate(2);
         return view('backend.layout.pms.receptionists.receptionists', compact('receptionists'));
     }
 
