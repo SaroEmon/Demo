@@ -46,7 +46,7 @@
 
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-genderless"></i> </span>
                     </div>
                     <select name="gender" class="form-control">
                         <option selected=""> Select Gender</option>
@@ -61,7 +61,7 @@
 
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-calendar-times"></i> </span>
                     </div>
                     <select name="shift" class="form-control">
                         <option selected=""> Select Shift</option>

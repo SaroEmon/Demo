@@ -13,6 +13,7 @@ use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Backend\ReceptionistsController;
 use App\Http\Controllers\Backend\AdminsController;
 use App\Http\Controllers\Backend\AppointmentController;
+use App\Http\Controllers\Backend\DepartmentsController;
 
 
 
@@ -40,10 +41,35 @@ Route::get('/',[HomeController::class,'home'])->name('homepage');
 //ADMIN PANNEL ROUTE
 Route::group(['prefix'=>'admin'],function (){
 
+    //ADMIN LOGIN
+
+    Route::get('/adminLogin/form',[AdminsController::class,'adminlogin'])->name('adminLogin.view');
+    Route::post('/admin/login',[AdminsController::class,'loginValidation'])->name('admin.login');
+    Route::get('/admin/logout',[AdminsController::class,'adminLogout'])->name('admin.logout');
+
+
+
+    Route::group(['middleware'=>'auth'],function (){
+
+
+
+
 
 //DASHBOARD (control panel BACKEND)
 
         Route::get('/', [DashboardController::class, 'adminHome'])->name('home');
+
+
+        //DEPARTMENT
+
+        Route::get('/departments', [DepartmentsController::class, 'departments'])->name('departments');
+        Route::get('/departments/create', [DepartmentsController::class, 'departmentsCreate'])->name('departments.create');
+        Route::post('/departments/list', [DepartmentsController::class, 'departmentsList'])->name('departments.list');
+        Route::get('/department/delete/{id}',[DepartmentsController::class,'departmentDelete'])->name('department.delete');
+
+
+
+
 
 //DOCTORS
 
@@ -112,11 +138,7 @@ Route::group(['prefix'=>'admin'],function (){
 
 
 
-    //ADMIN LOGIN
 
-    Route::get('/adminLogin/form',[AdminsController::class,'adminlogin'])->name('adminLogin.view');
-    Route::post('/admin/login',[AdminsController::class,'loginValidation'])->name('admin.login');
-    Route::get('/admin/logout',[AdminsController::class,'adminLogout'])->name('admin.logout');
 
 
 
@@ -128,6 +150,7 @@ Route::group(['prefix'=>'admin'],function (){
     Route::get('/appointment/delete/{id}',[AppointmentController::class,'appointmentDelete'])->name('appointment.delete');
 
     });
+});
 
 
 

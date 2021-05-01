@@ -27,6 +27,11 @@
             <i class="fas fa-user-md"></i> <span>Home</span>
         </a>
     </li>
+    <li>
+        <a href="{{route('departments')}}">
+            <i class="fas fa-user-md"></i> <span>Departments</span>
+        </a>
+    </li>
 
 
 

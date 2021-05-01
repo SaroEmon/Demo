@@ -30,17 +30,17 @@
                     <ul class="dropdown-menu">
                         <!-- User image -->
                         <li class="user-header">
-                            <img src="public/img/cover.jpg" class="img-circle" alt="User Image">
+                            <img src="{{url('/img/admins/saro.jpg')}}" class="img-circle" alt="User Image">
                             <p> Saroar Hossain</p>
 
                         </li>
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-left">
-                                <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                <a href="{{route('admins')}}" class="btn btn-bitbucket">ADD</a>
                             </div>
                             <div class="pull-right">
-                                <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                <a href="#" class="btn btn-bitbucket">Sign out</a>
                             </div>
                         </li>
                     </ul>

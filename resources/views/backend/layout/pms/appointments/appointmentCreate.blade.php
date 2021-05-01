@@ -61,7 +61,7 @@
 
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-calendar"></i> </span>
                     </div>
                     <input name="date" class="form-control" placeholder="date" type="date">
                 </div>

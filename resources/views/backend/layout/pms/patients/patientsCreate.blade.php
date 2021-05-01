@@ -39,7 +39,7 @@
 
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-genderless"></i> </span>
                     </div>
                     <select name="gender" class="form-control">
                         <option selected=""> Select Gender</option>
@@ -73,14 +73,14 @@
 
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-location-arrow"></i> </span>
                     </div>
                     <input name="address" class="form-control" placeholder="Address" type="text">
                 </div>
 
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-home"></i> </span>
                     </div>
                     <input name="word_no" class="form-control" placeholder="word no" type="text">
                 </div>
@@ -98,6 +98,7 @@
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-success" data-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
                     </div>
             </form>
         </article>

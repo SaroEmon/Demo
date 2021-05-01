@@ -19,7 +19,7 @@
                 </div> <!-- form-group// -->
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-calendar"></i> </span>
                     </div>
 
                     <input name="quantity" class="form-control" placeholder="Quantity" type="number">
@@ -27,7 +27,7 @@
 
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-calculator"></i> </span>
                     </div>
                     <input name="consumptionAmount" class="form-control" placeholder="Amount" type="number">
                 </div>
@@ -54,7 +54,7 @@
 
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-clock"></i> </span>
                     </div>
                     <input name="date" class="form-control" placeholder="Date" type="date">
                 </div>

@@ -12,7 +12,7 @@
                 @csrf
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-pills"></i> </span>
                     </div>
                     <input name="name" class="form-control" placeholder="Medicine Name" type="text">
                 </div> <!-- form-group// -->
