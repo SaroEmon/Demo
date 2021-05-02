@@ -16,12 +16,7 @@
                     </div>
                     <input name="name" class="form-control" placeholder=" Name" type="text">
                 </div> <!-- form-group// -->
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-calendar"></i> </span>
-                    </div>
-                    <input name="departmentId" class="form-control" placeholder="Department ID" type="number">
-                </div><!-- form-group// -->
+                <!-- form-group// -->
 
 
                 <div class="form-group input-group">

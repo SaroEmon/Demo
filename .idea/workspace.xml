@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee29f69c-498e-4ef8-ab8d-337d29236dfc" name="Default Changelist" comment="" />
+    <list default="true" id="ee29f69c-498e-4ef8-ab8d-337d29236dfc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/img/admins/202105020541.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/doctors/202105020500.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/doctors/202105020519.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/doctors/202105020533.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/partials/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/AdminsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/AdminsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/AppointmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/AppointmentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/DepartmentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/DepartmentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/DoctorsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/DoctorsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_26_170732_create_appointments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_02_220306_create_appointments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_01_111226_create_departments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_01_111226_create_departments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/appointments/appointmentCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/appointments/appointmentCreate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/appointments/appointmentList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/appointments/appointmentList.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/departments/departments.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/departments/departments.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/departments/departmentsCreate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/departments/departmentsCreate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/doctors/doctors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/doctors/doctors.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layout/pms/login/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layout/pms/login/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/partials/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/partials/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/partials/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,12 +158,15 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1qyybYpU5vBTU0761ulEaQ02rVn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -207,6 +235,10 @@
       <workItem from="1619856548400" duration="219000" />
       <workItem from="1619857073476" duration="3066000" />
       <workItem from="1619866652866" duration="5088000" />
+      <workItem from="1619883670075" duration="1121000" />
+      <workItem from="1619933741092" duration="500000" />
+      <workItem from="1619975952887" duration="1074000" />
+      <workItem from="1619977909257" duration="15170000" />
     </task>
     <servers />
   </component>
@@ -224,5 +256,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

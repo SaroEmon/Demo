@@ -11,7 +11,7 @@ class AppointmentController extends Controller
     public function appointments()
     {
         $appointments = Appointment::all();
-        $appointments=Appointment::paginate(3);
+        $appointments = Appointment::paginate(3);
         return view('backend.layout.pms.appointments.appointmentList', compact('appointments'));
     }
 
@@ -20,9 +20,8 @@ class AppointmentController extends Controller
         return view('backend.layout.pms.appointments.appointmentCreate');
     }
 
-    public function appointmentsList (Request $request)
+    public function appointmentsList(Request $request)
     {
-
 
 
         Appointment::create([
@@ -38,11 +37,27 @@ class AppointmentController extends Controller
         return redirect()->route('appointments');
 
     }
+
     public function appointmentDelete($id)
     {
-        $appointment=Appointment::find($id);
+        $appointment = Appointment::find($id);
         $appointment->delete();
-        return redirect()->route('appointments')->with('success','Appointment Delete successfully');
+        return redirect()->route('appointments')->with('success', 'Appointment Delete successfully');
+    }
+
+    public function appointmentFormCreate(Request $request)
+    {
+//        dd($request->all());
+        Appointment::create([
+            'patientname' => $request->userName,
+            'patientemail' => $request->userEmail,
+            'contact' => $request->userPhone,
+            'department_id' => $request->department,
+            'doctor_id' => $request->doctor,
+            'date' => $request->userdate,
+            'message' => $request->message,
+        ]);
+        return redirect()->back();
     }
 }
 

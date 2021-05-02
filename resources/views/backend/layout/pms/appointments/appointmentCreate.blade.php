@@ -42,20 +42,9 @@
 
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-num"></i> </span>
                     </div>
-                    <select name="department_id" class="form-control">
-                        <option selected=""> Select Department</option>
-                        <option value="medicine">Medicine</option>
-                        <option value="physiology"> Physiology</option>
-                        <option value="ophthalmology"> Ophthalmology</option>
-                        <option value="microbiology"> Microbiology</option>
-                        <option value="pathology"> Pathology </option>
-                        <option value="pharmacology"> Pharmacology</option>
-                        <option value="community medicine"> Community Medicine</option>
-                        <option value="surgery"> Surgery </option>
-
-                    </select>
+                    <input name="departmentId" class="form-control" placeholder="Department ID" type="text">
                 </div> <!-- form-group end.// -->
 
 

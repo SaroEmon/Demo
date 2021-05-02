@@ -43,8 +43,8 @@
                 <th scope="row">{{$data->id}}</th>
 
 
-                <td>{{$data->name}}</td>
-                <td>{{$data->email}}</td>
+                <td>{{$data->patientname}}</td>
+                <td>{{$data->patientemail}}</td>
                 <td>{{$data->contact}}</td>
                 <td>{{$data->department_id}}</td>
                 <td>{{$data->doctor_id}}</td>

@@ -22,26 +22,6 @@ class DepartmentsController extends Controller
     }
     public  function departmentsList(Request $request)
     {
-//
-
-
-
-//
-//
-//        $file_name="";
-//        if ($request->hasFile('doctorImage'))
-//        {
-//
-//            $file=$request->file('doctorImage');
-//            if ($file->isValid())
-//            {
-//
-//                $file_name=date('Ymdms').".".$file->getClientOriginalExtension();
-//                $file->storeAs('doctors',$file_name);
-//            }
-//        }
-
-
 
 
 
@@ -49,7 +29,6 @@ class DepartmentsController extends Controller
             'name'=>$request->name,
             'email'=>$request->email,
             'contact'=>$request->contact,
-            'department_id'=>$request->departmentId,
             'room_no'=>$request->roomNo,
             'password'=>$request->password
 

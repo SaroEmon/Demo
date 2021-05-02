@@ -128,7 +128,7 @@ class AdminsController extends Controller
         function adminLogout()
         {
             Auth::logout();
-            return redirect()->route('adminlogin.view')->with('success', 'Logout Successfully');
+            return redirect()->route('adminLogout.view')->with('success', 'Logout Successfully');
         }
 
     }

@@ -121,9 +121,9 @@
 
                             We want to guide you , or recovery, so you can come back to your normal lifestyle. Whether it’s improving, maintaining or optimising your condition, we’re here to help.
                         </p>
-                        <div class="text-center">
-                            <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
-                        </div>
+{{--                        <div class="text-center">--}}
+{{--                            <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>--}}
+{{--                        </div>--}}
                     </div>
                 </div>
                 <div class="col-lg-8 d-flex align-items-stretch">
@@ -320,33 +320,35 @@
                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
 
-            <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+            <form action="{{route('apointment.form.create')}}" method="post"  >
+
+               @csrf
                 <div class="row">
                     <div class="col-md-4 form-group">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                        <input type="text" name="userName" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                         <div class="validate"></div>
                     </div>
                     <div class="col-md-4 form-group mt-3 mt-md-0">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                        <input type="email" class="form-control" name="userEmail" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
                         <div class="validate"></div>
                     </div>
                     <div class="col-md-4 form-group mt-3 mt-md-0">
-                        <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                        <input type="tel" class="form-control" name="userPhone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                         <div class="validate"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4 form-group mt-3">
-                        <input type="datetime-local" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                        <input type="datetime-local" name="userdate" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                         <div class="validate"></div>
                     </div>
                     <div class="col-md-4 form-group mt-3">
                         <select name="department" id="department" class="form-select">
                             <option value="">Select Department</option>
 
-                            @foreach($doctors as $data)
+                            @foreach($departments as $data)
 
-                            <option value="Department 1">{{$data->department}}</option>
+                            <option value="{{$data->id}}">{{$data->name}}</option>
 
                             @endforeach
 
@@ -381,12 +383,13 @@
                     <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
                     <div class="validate"></div>
                 </div>
-                <div class="mb-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
-                </div>
-                <div class="text-center"><button type="submit">Make an Appointment</button></div>
+                <br>
+{{--                <div class="mb-3">--}}
+{{--                    <div class="loading">Loading</div>--}}
+{{--                    <div class="error-message"></div>--}}
+{{--                    <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>--}}
+{{--                </div>--}}
+                <div class="text-center"><button class="btn btn-info" type="submit">Make an Appointment</button></div>
             </form>
 
         </div>

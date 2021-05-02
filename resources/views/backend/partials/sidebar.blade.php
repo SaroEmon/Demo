@@ -82,7 +82,7 @@
             <i class="fas fa-user-md"></i> <span>ADMIN</span>
         </a>
     </li>
-    <li><a href="{{route('adminLogin.view')}}"><i class="fas fa-user-md"></i> <span>LOG IN</span></a></li>
+
 </ul>
 </section>
 </aside>

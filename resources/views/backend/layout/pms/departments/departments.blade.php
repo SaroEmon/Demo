@@ -53,7 +53,6 @@
                 <thead>
 
                 <th scope="col">ID</th>
-                <th scope="col">DEPARTMENT_ID</th>
                 <th scope="col">NAME</th>
                 <th scope="col">EMAIL</th>
                 <th scope="col">CONTACT</th>
@@ -68,7 +67,6 @@
                 @foreach ($departments as $data)
                     <tr>
                         <th scope="row">{{$data->id}}</th>
-                        <td>{{$data->department_id}}</td>
                         <td>{{$data->name}}</td>
                         <td>{{$data->email}}</td>
                         <td>{{$data->contact}}</td>

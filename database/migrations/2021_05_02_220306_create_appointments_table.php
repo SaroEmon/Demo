@@ -21,7 +21,7 @@ class CreateAppointmentsTable extends Migration
             $table->string('department_id');
             $table->string('doctor_id');
             $table->date('date');
-            $table->text('message')->Nullable();
+            $table->text('message')->nullable();
             $table->timestamps();
         });
     }

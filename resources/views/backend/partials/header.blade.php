@@ -6,7 +6,7 @@
         <!-- mini logo for sidebar mini 50x50 pixels -->
 
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg">PMS</span>
+        <span class="logo-lg">MediCare</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -40,7 +40,7 @@
                                 <a href="{{route('admins')}}" class="btn btn-bitbucket">ADD</a>
                             </div>
                             <div class="pull-right">
-                                <a href="#" class="btn btn-bitbucket">Sign out</a>
+                                <a href="{{route('adminLogout.view')}}" class="btn btn-bitbucket">Sign out</a>
                             </div>
                         </li>
                     </ul>

@@ -60,7 +60,15 @@ Route::group(['prefix'=>'admin'],function (){
         Route::get('/', [DashboardController::class, 'adminHome'])->name('home');
 
 
-        //DEPARTMENT
+
+        //LOG OUT
+
+        Route::get('/adminLogout/form',[AdminsController::class,'adminLogout'])->name('adminLogout.view');
+
+
+
+
+//DEPARTMENT
 
         Route::get('/departments', [DepartmentsController::class, 'departments'])->name('departments');
         Route::get('/departments/create', [DepartmentsController::class, 'departmentsCreate'])->name('departments.create');
@@ -144,10 +152,20 @@ Route::group(['prefix'=>'admin'],function (){
 
 
     //APPOINTMENT LIST
+        //BACKEND
     Route::get('/appointments', [AppointmentController::class, 'appointments'])->name('appointments');
     Route::get('/appointments/create', [AppointmentController::class, 'appointmentsCreate'])->name('appointments.create');
     Route::post('/appointments/list', [AppointmentController::class, 'appointmentsList'])->name('appointments.list');
     Route::get('/appointment/delete/{id}',[AppointmentController::class,'appointmentDelete'])->name('appointment.delete');
+
+
+    //FRONTEND
+        Route::post('/appointment/create/frontend',[AppointmentController::class,'appointmentFormCreate'])->name('apointment.form.create');
+
+
+
+
+
 
     });
 });

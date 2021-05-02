@@ -82,7 +82,7 @@ public  function doctorsList(Request $request)
                 $doctors=Doctor::with('doctors');
             }
 
-            $title="earch Result";
+            $title="Search Result";
             return view('backend.layout.pms.doctors',compact('title','doctors','search'));
         }
 
