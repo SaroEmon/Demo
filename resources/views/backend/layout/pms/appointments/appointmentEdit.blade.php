@@ -3,92 +3,69 @@
 
     <div class="card bg-light">
         <article class="card-body mx-auto" style="max-width: 400px;">
-            <h4 class="card-title mt-3 text-center">Submission Form</h4>
+            <h4 class="card-title mt-3 text-center">Appointment Create Form</h4>
 
 
 
-            <form action="{{route('admin.update',$admin->id)}}" method="post" enctype="multipart/form-data">
+            <form action="{{route('appointment.update',$appointments->id)}}" method="post" enctype="multipart/form-data">
 
                 @csrf
                 @method('PUT')
+
 
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                     </div>
-                    <input value="{{$admin->name}}" name="name" class="form-control" placeholder="Full name" type="text">
+                    <input value="{{$appointments->patientname}}" name="name" class="form-control" placeholder="Full name" type="text">
                 </div> <!-- form-group// -->
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
                     </div>
-                    <input value="{{$admin->email}}" name="email" class="form-control" placeholder="Email address" type="email">
+                    <input value="{{$appointments->patientemail}}" name="email" class="form-control" placeholder="Email address" type="email">
                 </div> <!-- form-group// -->
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
                     </div>
 
-                    <input value="{{$admin->contact}}" name="contact" class="form-control" placeholder="Phone number" type="text">
+                    <input value="{{$appointments->contact}}" name="patientContact" class="form-control" placeholder="Phone number" type="text">
                 </div> <!-- form-group// -->
 
-
-                {{--                PICTURE--}}
-                <div class="form-group">
-                    <label for="">Upload photo:</label><br>
-                    <input value="{{$admin->image}}" type="file" name="adminImage" placeholder="please Select an Image">
-
-
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                    </div>
+                    <input value="{{$appointments->doctor_id}}" name="doctorId" class="form-control" placeholder="Doctor ID" type="text">
                 </div>
 
 
-
-
-
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-building"></i> </span>
-                    </div>
-                    <select name="gender" class="form-control">
-                        <option> Select Gender</option>
-                        <option @if($admin->gender) selected @endif value="male">Male</option>
-                        <option @if($admin->gender) selected @endif value="female"> Female</option>
-
-                    </select>
-                </div>
-
-
-
-
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-building"></i> </span>
-                    </div>
-                    <select name="shift" class="form-control">
-{{--                        @foreach($admin as $data)--}}
-                        <option > Select Shift</option>
-                        <option @if($admin->shift) selected @endif value="day">Day</option>
-                        <option @if($admin->shift) selected @endif value="night"> Night</option>
-
-
-                    </select>
-                </div> <!-- form-group end.// -->
 
 
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                     </div>
-                    <input value="{{$admin->address}}" name="address" class="form-control" placeholder="Address" type="text">
-                </div>
+                    <input value="{{$appointments->department_id}}" name="departmentId" class="form-control" placeholder="Department ID" type="text">
+                </div> <!-- form-group end.// -->
 
 
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-calendar"></i> </span>
                     </div>
-                    <input value=""   name="password" class="form-control" placeholder="Create password" type="password">
-                </div> <!-- form-group// -->
+                    <input value="{{$appointments->date}}" name="date" class="form-control" placeholder="date" type="date">
+                </div>
+
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-calendar"></i> </span>
+                    </div>
+                    <input value="{{$appointments->message}}" name="message" class="form-control" placeholder="content" type="text">
+                </div>
+
+                <!-- form-group// -->
                 <!-- form-group// -->
                 <div class="form-group">
                     <div class="modal-footer">

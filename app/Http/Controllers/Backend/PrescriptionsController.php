@@ -25,7 +25,8 @@ class PrescriptionsController extends Controller
         Prescription::create([
             'patient_id'=>$request->patientId,
             'quantity'=>$request->quantity,
-            'consumption_amount'=>$request->consumptionAmount,
+            'day'=>$request->no_of_day,
+            'content'=>$request->prescription_content,
             'department'=>$request->department,
             'date'=>$request->date,
 

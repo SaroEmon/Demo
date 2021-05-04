@@ -52,8 +52,9 @@
                 <td>{{$data->message}}</td>
 
                 <td>
-                    <a class="btn btn-success" href="">view</a>
-                    <a class="btn btn-info " href="">Edit</a>
+                    <a class="btn btn-primary" href="{{route('prescriptions.create')}}">ADD</a>
+                    <a class="btn btn-success" href="{{route('prescriptions.create')}}">View </a>
+                    <a class="btn btn-info " href="{{route('appointment.edit',$data->id)}}">Edit</a>
                     <a class="btn btn-danger" href="{{route('appointment.delete',$data->id)}}">Delete</a>
 
                 </td>

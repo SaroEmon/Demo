@@ -59,5 +59,28 @@ class AppointmentController extends Controller
         ]);
         return redirect()->back();
     }
+
+
+
+    public function appointmentEdit($id)
+    {
+        $appointments= Appointment::find($id);
+        return view ('backend.layout.pms.appointments.appointmentEdit', compact('appointments'));
+    }
+
+    public function appointmentUpdate(Request $request,$id)
+    {
+        Appointment::find($id)->update([
+            'patientname' => $request->name,
+//            'image' => $file_name,
+            'patientemail' => $request->email,
+            'contact' => $request->contact,
+            'department_id' => $request->departmentId,
+            'doctor_id' => $request->doctorId,
+            'date' => $request->date,
+            'message' =>$request->message,
+        ]);
+        return redirect()->route('appointments')->with('success', 'Appointment Updated successfully');
+    }
 }
 

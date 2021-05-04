@@ -46,7 +46,7 @@
                 <td>{{$data->word_no}}</td>
                 <td>
                     <a class="btn btn-success" href="">view</a>
-                    <a class="btn btn-info " href="">Edit</a>
+                    <a class="btn btn-info " href="{{route('nurse.edit',$data->id)}}">Edit</a>
                     <a class="btn btn-danger" href="{{route('nurse.delete',$data->id)}}">Delete</a>
 
                 </td>

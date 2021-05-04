@@ -1,7 +1,8 @@
 @extends('backend.welcome')
 @section('page')
 
-    <div class="card bg-light">
+
+    <div class="card bg-purple-active">
         <article class="card-body mx-auto" style="max-width: 400px;">
             <h4 class="card-title mt-3 text-center">Submission Form</h4>
 
@@ -29,8 +30,16 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-calculator"></i> </span>
                     </div>
-                    <input name="consumptionAmount" class="form-control" placeholder="Amount" type="number">
+                    <input name="no_of_day" class="form-control" placeholder="No Of Days" type="text">
                 </div>
+
+
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-file-text"></i> </span>
+                        </div>
+                        <textarea name="prescription_content" placeholder="How the patient will take the medicine" id="" cols="30" rows="10"></textarea>
+                    </div>
 
 
 
@@ -64,9 +73,10 @@
 
 
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-success" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Save changes</button>
+{{--                        <button type="submit" class="btn btn-success" data-dismiss="modal">Close</button>--}}
+                       <button type="submit" class="btn btn-info">Save changes</button>
 
+                    </div>
                     </div>
             </form>
         </article>

@@ -73,7 +73,7 @@
 
     <li>
         <a href="{{route('appointments')}}">
-            <i class="fas fa-user-md"></i> <span>Appointment List</span>
+            <i class="fas fa-user-md"></i> <span>Today's Appointment </span>
         </a>
     </li>
     <li class="header">LABELS</li>

@@ -74,6 +74,8 @@ Route::group(['prefix'=>'admin'],function (){
         Route::get('/departments/create', [DepartmentsController::class, 'departmentsCreate'])->name('departments.create');
         Route::post('/departments/list', [DepartmentsController::class, 'departmentsList'])->name('departments.list');
         Route::get('/department/delete/{id}',[DepartmentsController::class,'departmentDelete'])->name('department.delete');
+        Route::get('/department/edit/{id}',[DepartmentsController::class,'departmentEdit'])->name('department.edit');
+        Route::put('/department/update/{id}',[DepartmentsController::class,'departmentUpdate'])->name('department.update');
 
 
 
@@ -85,6 +87,9 @@ Route::group(['prefix'=>'admin'],function (){
         Route::get('/doctors/create', [DoctorsController::class, 'doctorsCreate'])->name('doctors.create');
         Route::post('/doctors/list', [DoctorsController::class, 'doctorsList'])->name('doctors.list');
         Route::get('/doctor/delete/{id}',[DoctorsController::class,'doctorDelete'])->name('doctor.delete');
+        Route::get('/doctor/edit/{id}',[DoctorsController::class,'doctorEdit'])->name('doctor.edit');
+        Route::put('/doctor/update/{id}',[DoctorsController::class,'doctorUpdate'])->name('doctor.update');
+
         Route::post('/doctor/search',[DoctorsController::class,'search'])->name('doctor.search');
 
 
@@ -93,6 +98,8 @@ Route::group(['prefix'=>'admin'],function (){
         Route::get('/nurses/create', [NursesController::class, 'nursesCreate'])->name('nurses.create');
         Route::post('/nurses/list', [NursesController::class, 'nursesList'])->name('nurses.list');
         Route::get('/nurse/delete/{id}',[NursesController::class,'nurseDelete'])->name('nurse.delete');
+        Route::get('/nurse/edit/{id}',[NursesController::class,'nurseEdit'])->name('nurse.edit');
+        Route::put('/nurse/update/{id}',[NursesController::class,'nurseUpdate'])->name('nurse.update');
 
 
 
@@ -157,6 +164,8 @@ Route::group(['prefix'=>'admin'],function (){
     Route::get('/appointments/create', [AppointmentController::class, 'appointmentsCreate'])->name('appointments.create');
     Route::post('/appointments/list', [AppointmentController::class, 'appointmentsList'])->name('appointments.list');
     Route::get('/appointment/delete/{id}',[AppointmentController::class,'appointmentDelete'])->name('appointment.delete');
+    Route::get('/appointment/edit/{id}',[AppointmentController::class,'appointmentEdit'])->name('appointment.edit');
+    Route::put('/appointment/update/{id}',[AppointmentController::class,'appointmentUpdate'])->name('appointment.update');
 
 
     //FRONTEND

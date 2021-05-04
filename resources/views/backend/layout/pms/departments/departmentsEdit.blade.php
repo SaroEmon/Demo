@@ -3,73 +3,66 @@
 
     <div class="card bg-light">
         <article class="card-body mx-auto" style="max-width: 400px;">
-            <h4 class="card-title mt-3 text-center">Appointment Create Form</h4>
+            <h4 class="card-title mt-3 text-center">Submission Form</h4>
 
 
 
-            <form action="{{route('appointments.list')}}" method="post" enctype="multipart/form-data">
+            <form action="{{route('department.update',$departments->id)}}" method="post">
 
                 @csrf
+                @method('PUT')
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                     </div>
-                    <input name="name" class="form-control" placeholder="Full name" type="text">
+                    <input value="{{$departments->name}}" name="name" class="form-control" placeholder=" Name" type="text">
                 </div> <!-- form-group// -->
+                <!-- form-group// -->
+
+
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
                     </div>
-                    <input name="email" class="form-control" placeholder="Email address" type="email">
-                </div> <!-- form-group// -->
+
+                    <input value="{{$departments->email}}" name="email" class="form-control" placeholder="admin@gmail.com" type="email">
+                </div>
+
+
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
                     </div>
 
-                    <input name="patientContact" class="form-control" placeholder="Phone number" type="text">
+                    <input value="{{$departments->contact}}" name="contact" class="form-control" placeholder="Phone Number" type="text">
                 </div> <!-- form-group// -->
-
+                 <!-- form-group end.// -->
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-home"></i> </span>
                     </div>
-                    <input name="doctorId" class="form-control" placeholder="Doctor ID" type="text">
+                    <input value="{{$departments->room_no}}" name="roomNo" class="form-control" placeholder="Room Number" type="text">
                 </div>
 
-
-
-
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                     </div>
-                    <input name="departmentId" class="form-control" placeholder="Department ID" type="text">
-                </div> <!-- form-group end.// -->
-
-
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-calendar"></i> </span>
-                    </div>
-                    <input name="date" class="form-control" placeholder="date" type="date">
+                    <input value="{{$departments->password}}"  name="password" class="form-control" placeholder="Create password" type="password">
                 </div>
 
-
-                <!-- form-group// -->
                 <!-- form-group// -->
                 <div class="form-group">
+
+
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-success" data-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-primary">Save changes</button>
+
                     </div>
                 </div>
             </form>
         </article>
-
-
-
-
 
     </div> <!-- card.// -->
 

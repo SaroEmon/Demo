@@ -70,6 +70,58 @@ public  function doctorsList(Request $request)
             return redirect()->route('doctors')->with('success','Doctor Delete successfully');
         }
 
+
+        //UPDATE
+
+
+    public function doctorEdit($id)
+    {
+        $doctors= Doctor::find($id);
+        return view ('backend.layout.pms.doctors.doctorsEdit', compact('doctors'));
+    }
+
+    public function doctorUpdate(Request $request,$id)
+    {
+        Doctor::find($id)->update([
+            'name' => $request->name,
+            'email' => $request->email,
+            'contact' => $request->contact,
+            'gender' => $request->gender,
+            'department' => $request->department,
+            'address' => $request->address,
+            'room_no' => $request->room_no,
+            'password' => $request->password,
+
+        ]);
+        return redirect()->route('doctors')->with('success', 'Doctor Updated successfully');
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         public function search(Request $request)
         {
             $search=$request->search();

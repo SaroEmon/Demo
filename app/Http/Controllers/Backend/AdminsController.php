@@ -40,6 +40,7 @@ class AdminsController extends Controller
 
         Admin::create([
             'name' => $request->name,
+            'role' => $request->adminRole,
             'image' => $file_name,
             'email' => $request->email,
             'contact' => $request->contact,

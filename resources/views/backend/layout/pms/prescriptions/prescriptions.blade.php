@@ -27,7 +27,8 @@
                 <th scope="row">{{$data->id}}</th>
                 <td>{{$data->quantity}}</td>
                 <td>{{$data->patient_id}}</td>
-                <td>{{$data->consumption_amount}}</td>
+                <td>{{$data->day}}</td>
+                <td>{{$data->content}}</td>
                 <td>{{$data->department}}</td>
 
                 <td>{{$data->date}}</td>

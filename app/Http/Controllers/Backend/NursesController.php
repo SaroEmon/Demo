@@ -61,4 +61,28 @@ class NursesController extends Controller
         $nurse->delete();
         return redirect()->route('nurses')->with('success','Nurse Delete successfully');
     }
+
+
+
+    public function nurseEdit($id)
+    {
+        $nurses= Nurse::find($id);
+        return view ('backend.layout.pms.nurses.nursesEdit', compact('nurses'));
+    }
+
+    public function nurseUpdate(Request $request,$id)
+    {
+       Nurse::find($id)->update([
+            'name' => $request->name,
+            'email' => $request->email,
+            'contact' => $request->contact,
+            'gender' => $request->gender,
+            'department' => $request->department,
+            'address' => $request->address,
+            'word_no' => $request->word_no,
+            'password' => $request->password,
+
+        ]);
+        return redirect()->route('nurses')->with('success', 'Nurses Updated successfully');
+    }
 }

@@ -70,7 +70,7 @@ LOG IN
 
 <span class="txt1">
 Forgot
-</span>
+</span>b
                     <a href="#" class="txt2">
                         Username / Password?
                     </a>

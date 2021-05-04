@@ -73,6 +73,23 @@
                 </div> <!-- form-group end.// -->
 
 
+
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-calendar-times"></i> </span>
+                    </div>
+                    <select name="adminRole" class="form-control">
+                        <option selected=""> Select Role</option>
+                        <option value="admin">Admin</option>
+                        <option value="doctor"> Doctor</option>
+                        <option value="receptionist"> Receptionist</option>
+                        <option value="nurse"> Nurse</option>
+
+
+                    </select>
+                </div>
+
+
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-user"></i> </span>

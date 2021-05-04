@@ -82,7 +82,7 @@
 
                 <td>
                     <a class="btn btn-success" href="">view</a>
-                    <a class="btn btn-info " href="">Edit</a>
+                    <a class="btn btn-info " href="{{route('doctor.edit',$data->id)}}">Edit</a>
                     <a class="btn btn-danger" href="{{route('doctor.delete',$data->id)}}">Delete</a>
 
                 </td>

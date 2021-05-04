@@ -20,9 +20,8 @@ class CreateNursesTable extends Migration
             $table->string('email')->unique();
             $table->string('contact')->unique();
             $table->string('gender');
-            $table->string('department');
             $table->text('address');
-            $table->integer('word_no');
+            $table->integer('shift');
             $table->string('password');
 
 
@@ -40,3 +39,5 @@ class CreateNursesTable extends Migration
         Schema::dropIfExists('nurses');
     }
 }
+
+
