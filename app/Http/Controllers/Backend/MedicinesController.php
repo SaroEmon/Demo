@@ -36,6 +36,28 @@ class MedicinesController extends Controller
         $medicine->delete();
         return redirect()->route('medicines.view')->with('success','Medicine Delete successfully');
     }
+
+
+
+
+
+    public function medicineEdit($id)
+    {
+        $medicines= Medicine::find($id);
+        return view ('backend.layout.pms.medicines.medicinesUpdate', compact('medicines'));
+    }
+
+    public function medicineUpdate(Request $request,$id)
+    {
+        Medicine::find($id)->update([
+            'medicine_id' => $request->medicineId,
+            'name' => $request->medicine_name,
+            'department' => $request->department,
+
+
+        ]);
+        return redirect()->route('medicines')->with('success', 'Medicine Updated successfully');
+    }
 }
 
 

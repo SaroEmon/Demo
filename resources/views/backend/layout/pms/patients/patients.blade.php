@@ -27,16 +27,17 @@
         @foreach ($patients as $data)
             <tr>
                 <th scope="row">{{$data->id}}</th>
-                <td>{{$data->name}}</td>
-                <td>{{$data->department}}</td>
+                <td>{{$data->patientname}}</td>
                 <td>{{$data->email}}</td>
-                <td>{{$data->address}}</td>
                 <td>{{$data->contact}}</td>
+                <td>{{$data->gender}}</td>
+                <td>{{$data->department}}</td>
+                <td>{{$data->address}}</td>
                 <td>{{$data->word_no}}</td>
 
                 <td>
                     <a class="btn btn-success" href="">view</a>
-                    <a class="btn btn-info " href="">Edit</a>
+                    <a class="btn btn-info " href="{{route('patient.edit',$data->id)}}">Edit</a>
                     <a class="btn btn-danger" href="{{route('patient.delete',$data->id)}}">Delete</a>
 
                 </td>

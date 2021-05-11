@@ -27,7 +27,7 @@
                 <td>{{$data->department}}</td>
                 <td>
                     <a class="btn btn-success" href="">view</a>
-                    <a class="btn btn-info " href="">Edit</a>
+                    <a class="btn btn-info " href="{{route('medicine.edit',$data->id)}}">Edit</a>
                     <a class="btn btn-danger" href="{{route('medicine.delete',$data->id)}}">Delete</a>
 
                 </td>

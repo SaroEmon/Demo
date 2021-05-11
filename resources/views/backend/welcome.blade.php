@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Prescription Management System with Doctor Appointment </title>
+    <title>Prescription Management System</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="{{asset("backend")}}/bower_components/bootstrap-daterangepicker/daterangepicker.css">
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="{{asset("backend")}}/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,50 +38,110 @@
     <![endif]-->
 
     <!-- Google Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href=""{{asset("backend")}}/fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-green sidebar-mini">
+<body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
 
-    <!------------------------------ Header Start:  ------------------------------>
-
-
-            @include('backend.partials.header')
-
-
-<!------------------------------ Header End: ------------------------------>
-
-
-    <!------------------------------ sidebar menu Start:  ------------------------------>
-
-
-            @include('backend.partials.sidebar')
+@include('backend.partials.header')
 
 
 
-<!------------------------------ /.sidebar End ------------------------------>
+
+@include('backend.partials.sidebar')
 
 
-    <!------------------------------ Content DASHBOARD PAGE LAYOUT Start---------------------->
+
+
+
+
+
+
+
+
     <div>
-    <div class="content-wrapper">
 
-    @yield('page')
+        <div class="content-wrapper">
+
+            <section class="content-header">
+            @yield('page')
 
 
-    </div>
+        </div>
     </div>
 
     <!------------------------------ Content DASHBOARD PAGE LAYOUT End---------------------->
 
 
     <!------------------------------ FOOTER START---------------------->
+
+@include('backend.partials.footer')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <<<<<<<<<<<<<<<<<< GENERAL SETTING      >>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Create the tabs -->
+        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+            <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+            <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!-- Home tab content -->
+            <div class="tab-pane" id="control-sidebar-home-tab"></div>
+
+            <!-- Settings tab content -->
+            <div class="tab-pane" id="control-sidebar-settings-tab">
+                <form method="post">
+
+                </form>
+            </div>
+            <!-- /.tab-pane -->
+        </div>
+    </aside>
+    <!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+         immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
 </div>
-    @include('backend.partials.footer')
+<!-- ./wrapper -->
 
 
-    <!------------------------------ FOOTER END---------------------->
+<!-- <<<<<<<<<<<<<<<<<< GENERAL SETTING ENDS     >>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+
+
+
+
 
 
 

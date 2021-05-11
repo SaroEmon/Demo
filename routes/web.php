@@ -35,6 +35,20 @@ Route::get('/',[HomeController::class,'home'])->name('homepage');
 
 
 
+//USER LOGIN
+Route::get('/user/login',[PatientsController::class,'userLogin'])->name('user.login');
+Route::post('/loginValidation',[PatientsController::class,'userLoginValidation'])->name('login.validation');
+Route::get('/user/logout',[PatientsController::class,'userLogout'])->name('user.logout');
+
+
+
+
+Route::get('/user/registration',[PatientsController::class,'userRegistration'])->name('user.registration');
+Route::post('/user/registrationCreate',[PatientsController::class,'registrationCreate'])->name('registration.create');
+
+
+
+
 
 
 
@@ -108,8 +122,9 @@ Route::group(['prefix'=>'admin'],function (){
         Route::get('/medicines', [MedicinesController::class, 'medicines'])->name('medicines.view');
         Route::get('/medicines/create', [MedicinesController::class, 'medicinesCreate'])->name('medicines.create');
         Route::post('/medicines/list', [MedicinesController::class, 'medicinesList'])->name('medicines.list');
-    Route::get('/medicine/delete/{id}',[MedicinesController::class,'medicineDelete'])->name('medicine.delete');
-
+        Route::get('/medicine/delete/{id}',[MedicinesController::class,'medicineDelete'])->name('medicine.delete');
+        Route::get('/medicine/edit/{id}',[MedicinesController::class,'medicineEdit'])->name('medicine.edit');
+        Route::put('/medicine/update/{id}',[MedicinesController::class,'medicineUpdate'])->name('medicine.update');
 
 
 
@@ -117,13 +132,18 @@ Route::group(['prefix'=>'admin'],function (){
         Route::get('/pharmacy', [PharmaciesController::class, 'pharmacies'])->name('pharmacies');
         Route::get('/pharmacy/create', [PharmaciesController::class, 'pharmaciesCreate'])->name('pharmacies.create');
         Route::post('/pharmacy/list', [PharmaciesController::class, 'pharmaciesList'])->name('pharmacies.list');
-
+        Route::get('/pharmacy/delete/{id}',[PharmaciesController::class,'pharmacyDelete'])->name('pharmacy.delete');
+        Route::get('/pharmacy/edit/{id}',[PharmaciesController::class,'pharmacyEdit'])->name('pharmacy.edit');
+        Route::put('/pharmacy/update/{id}',[PharmaciesController::class,'pharmacyUpdate'])->name('pharmacy.update');
 
 
 //PRESCRIPTION
         Route::get('/prescriptions', [PrescriptionsController::class, 'prescriptions'])->name('prescriptions');
-        Route::get('/prescription/create', [PrescriptionsController::class, 'prescriptionsCreate'])->name('prescriptions.create');
+        Route::get('/prescription/create/{id?}', [PrescriptionsController::class, 'prescriptionsCreate'])->name('prescriptions.create');
         Route::post('/prescriptions/list', [PrescriptionsController::class, 'prescriptionsList'])->name('prescriptions.list');
+        Route::get('/prescription/delete/{id}',[PrescriptionsController::class,'prescriptionDelete'])->name('prescription.delete');
+//
+
 
 
 
@@ -133,7 +153,8 @@ Route::group(['prefix'=>'admin'],function (){
         Route::get('/patients/create', [PatientsController::class, 'patientsCreate'])->name('patients.create');
         Route::post('/patients/list', [PatientsController::class, 'patientsList'])->name('patients.list');
         Route::get('/patient/delete/{id}',[PatientsController::class,'patientDelete'])->name('patient.delete');
-
+        Route::get('/patient/edit/{id}',[PatientsController::class,'patientEdit'])->name('patient.edit');
+        Route::put('/patient/update/{id}',[PatientsController::class,'patientUpdate'])->name('patient.update');
 
     //RECEPTIONIST
 

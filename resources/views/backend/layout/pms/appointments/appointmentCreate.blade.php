@@ -1,7 +1,7 @@
 @extends('backend.welcome')
 @section('page')
 
-    <div class="card bg-light">
+    <div class="card bg-green-gradient">
         <article class="card-body mx-auto" style="max-width: 400px;">
             <h4 class="card-title mt-3 text-center">Appointment Create Form</h4>
 

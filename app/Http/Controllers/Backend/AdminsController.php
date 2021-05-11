@@ -72,7 +72,7 @@ class AdminsController extends Controller
     public function adminEdit($id)
     {
         $admin= Admin::find($id);
-        return view ('backend.layout.pms.admins.adminsEdit', compact('admin'));
+        return view ('backend.layout.pms.admins.adminsUpdate', compact('admin'));
     }
 
     public function adminUpdate(Request $request,$id)
@@ -81,10 +81,10 @@ class AdminsController extends Controller
             'name' => $request->name,
 //            'image' => $file_name,
             'email' => $request->email,
-            'contact' => $request->contact,
+            'contact' => $request->adminContact,
             'gender' => $request->gender,
             'shift' => $request->shift,
-            'address' => $request->address,
+            'address' => $request->adminAddress,
             'password' => bcrypt($request->password)
         ]);
         return redirect()->route('admins')->with('success', 'Admin Updated successfully');
@@ -101,7 +101,7 @@ class AdminsController extends Controller
 
     public function adminlogin()
     {
-        return view('backend.layout.pms.login.login');
+        return view('backend.layout.pms.Login.Login');
     }
 
     public function loginValidation(Request $request)
@@ -114,7 +114,7 @@ class AdminsController extends Controller
         ]);
         $admin_login = $request->only('email', 'password');
 //        dd($admin_login);
-        if (Auth::attempt($admin_login)) {
+        if (Auth:: guard('admin')-> attempt($admin_login)) {
             $request->session()->regenerate();
             return redirect()->route('home');
         }
@@ -128,7 +128,7 @@ class AdminsController extends Controller
         public
         function adminLogout()
         {
-            Auth::logout();
+            Auth::guard('admin')->logout();
             return redirect()->route('adminLogout.view')->with('success', 'Logout Successfully');
         }
 

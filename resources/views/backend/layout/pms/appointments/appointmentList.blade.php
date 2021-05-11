@@ -18,7 +18,7 @@
 
 
 
-    <table  class="table table-responsive table-bordered table-hover">
+    <table  class="table table-borderless">
         <thead>
 
         <th scope="col">ID</th>
@@ -52,8 +52,8 @@
                 <td>{{$data->message}}</td>
 
                 <td>
-                    <a class="btn btn-primary" href="{{route('prescriptions.create')}}">ADD</a>
-                    <a class="btn btn-success" href="{{route('prescriptions.create')}}">View </a>
+                    <a class="btn btn-primary" href="{{route('prescriptions.create',$data->id)}}">ADD Prescription</a>
+                    <a class="btn btn-success" href="{{route('prescriptions')}}">View </a>
                     <a class="btn btn-info " href="{{route('appointment.edit',$data->id)}}">Edit</a>
                     <a class="btn btn-danger" href="{{route('appointment.delete',$data->id)}}">Delete</a>
 

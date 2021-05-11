@@ -1,24 +1,5 @@
-{{--<div>--}}
+<footer class="main-footer">
 
-{{--<footer class="main-footer">--}}
-{{--    <div class="pull-right hidden-xs">--}}
-{{--    </div>--}}
-{{--    <strong>Copyright &copy; 2021 Saroar Hossain <a </a></strong> All rights--}}
-{{--    reserved.--}}
-{{--</footer>--}}
-
-{{--<!-- Control Sidebar -->--}}
-{{--<aside class="control-sidebar control-sidebar-dark">--}}
-{{--    <!-- Create the tabs -->--}}
-{{--    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">--}}
-
-{{--    </ul>--}}
-
-
-
-
-{{--    <!-- /.tab-pane -->--}}
-{{--    </div>--}}
-{{--</aside>--}}
-{{--</div>--}}
-<!-- ======= Footer ======= -->
+    <strong>Copyright &copy; 2014-2018 <a target="_blank" href="">Saroar Hossain</a>.</strong> All rights
+    reserved.
+</footer>

@@ -30,8 +30,8 @@
 
                 <td>
                     <a class="btn btn-success" href="">view</a>
-                    <a class="btn btn-info " href="">Edit</a>
-                    <a class="btn btn-danger" href="">Delete</a>
+                    <a class="btn btn-info " href="{{route('pharmacy.edit',$data->id)}}">Edit</a>
+                    <a class="btn btn-danger" href="{{route('pharmacy.delete',$data->id)}}">Delete</a>
 
                 </td>
 

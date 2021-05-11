@@ -63,6 +63,7 @@
                         <button type="submit" class="btn btn-primary">Save changes</button>
 
                     </div>
+                    </div>
             </form>
         </article>
 

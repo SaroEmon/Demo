@@ -65,7 +65,7 @@ class AppointmentController extends Controller
     public function appointmentEdit($id)
     {
         $appointments= Appointment::find($id);
-        return view ('backend.layout.pms.appointments.appointmentEdit', compact('appointments'));
+        return view ('backend.layout.pms.appointments.appointmentUpdate', compact('appointments'));
     }
 
     public function appointmentUpdate(Request $request,$id)
