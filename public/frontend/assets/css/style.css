@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**
-* Appointment Button *
+* AppointmentMail Button *
 */
 .appointment-btn {
   margin-left: 25px;
@@ -227,7 +227,7 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -339,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #2c4964;

@@ -82,6 +82,9 @@ Route::group(['prefix'=>'admin'],function (){
 
 
 
+
+
+
 //DEPARTMENT
 
         Route::get('/departments', [DepartmentsController::class, 'departments'])->name('departments');

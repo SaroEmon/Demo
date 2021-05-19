@@ -27,11 +27,11 @@
 
 
             <li>
-                <a href="">
+                <a href="#">
                     <i class="fa fa-circle-o text-aqua"></i> <span>Home</span>
                     <span class="pull-right-container">
 
-              <small class="label pull-right bg-green">Refresh</small>
+{{--              <small class="label pull-right bg-green">Refresh</small>--}}
 
             </span>
                 </a>

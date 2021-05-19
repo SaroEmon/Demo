@@ -82,12 +82,12 @@
 
 
                 @else
-                    <li class="dropdown"><a href="#" class="btn btn-secondary"><span>LOGIN/REGISTRATION</span> <i class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a href="#" class="appointment-btn "><span>Login / Registration</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
 
-                        <li><a href="{{route('user.login')}}"class="btn-info">User Login</a></li>
+                        <li><a href="{{route('user.login')}}">User Login</a></li>
 
-                        <li><a href={{route('user.registration')}}>User Registartion</a></li>
+                        <li><a href="{{route('user.registration')}}">User Registartion</a></li>
 
                     </ul>
                 </li>
@@ -321,7 +321,7 @@
 
 
 
-    <!-- ======= Appointment Section ======= -->
+    <!-- ======= AppointmentMail Section ======= -->
     <section id="appointment" class="appointment section-bg">
         <div class="container">
 
@@ -329,8 +329,18 @@
                 <h2>Make an Appointment</h2>
                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
+            @if(session()->has('success'))
+                <div class="alert alert-success">
+                    {{ session()->get('success') }}
+                </div>
+            @endif   @if(session()->has('danger'))
+                <div class="alert alert-danger">
+                    {{ session()->get('danger') }}
+                </div>
+            @endif
 
-            <form action="{{route('apointment.form.create')}}" method="post"  >
+
+            <form action="{{route('appointments.list')}}" method="post"  >
 
                @csrf
                 <div class="row">
@@ -339,33 +349,33 @@
                         <div class="validate"></div>
                     </div>
                     <div class="col-md-4 form-group mt-3 mt-md-0">
-                        <input type="email" class="form-control" name="userEmail" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                        <input type="email" class="form-control" readonly name="userEmail" id="email" @auth('user') value="{{auth('user')->user()->email}}" @else value=" email:login please" @endauth placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
                         <div class="validate"></div>
                     </div>
                     <div class="col-md-4 form-group mt-3 mt-md-0">
-                        <input type="tel" class="form-control" name="userPhone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                        <input type="number" minlength="11" maxlength="11" class="form-control" name="userPhone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter 11 digit number">
                         <div class="validate"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4 form-group mt-3">
-                        <input type="datetime-local" name="userdate" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                        <input type="date" name="userdate" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                         <div class="validate"></div>
                     </div>
-                    <div class="col-md-4 form-group mt-3">
-                        <select name="department" id="department" class="form-select">
-                            <option value="">Select Department</option>
+{{--                    <div class="col-md-4 form-group mt-3">--}}
+{{--                        <select name="department" id="department" class="form-select">--}}
+{{--                            <option value="">Select Department</option>--}}
 
-                            @foreach($departments as $data)
+{{--                            @foreach($departments as $data)--}}
 
-                            <option value="{{$data->id}}">{{$data->name}}</option>
+{{--                            <option value="{{$data->id}}">{{$data->name}}</option>--}}
 
-                            @endforeach
+{{--                            @endforeach--}}
 
 
-                        </select>
-                        <div class="validate"></div>
-                    </div>
+{{--                        </select>--}}
+{{--                        <div class="validate"></div>--}}
+{{--                    </div>--}}
 
 
 
@@ -377,13 +387,28 @@
                             <option value="">Select Doctor</option>
                             @foreach($doctors as $data)
 
-                            <option value="{{$data->id}}">{{$data->name}}</option>
+                            <option value="{{$data->id}}">{{$data->name}}  ({{$data->department}})</option>
 
                             @endforeach
 
                         </select>
                         <div class="validate"></div>
                     </div>
+
+
+{{--                    <div--}}
+{{--                        class="col-md-4 form-group mt-3">--}}
+{{--                        <select name="appointment" id="appointment" class="form-select">--}}
+{{--                            <option value="">AppointmentMail List</option>--}}
+
+{{--                                <option value=""></option>--}}
+
+
+
+{{--                        </select>--}}
+{{--                        <div class="validate"></div>--}}
+{{--                    </div>--}}
+
 
 
 
@@ -399,11 +424,11 @@
 {{--                    <div class="error-message"></div>--}}
 {{--                    <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>--}}
 {{--                </div>--}}
-                <div class="text-center"><button class="btn btn-info" type="submit">Make an Appointment</button></div>
+                <div class="text-center"><button class="btn btn-primary" type="submit">Make an Appointment</button></div>
             </form>
 
         </div>
-    </section><!-- End Appointment Section -->
+    </section><!-- End AppointmentMail Section -->
 
     <!-- ======= Departments Section ======= -->
     <section id="departments" class="departments">
