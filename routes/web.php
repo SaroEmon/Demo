@@ -39,6 +39,10 @@ Route::get('/',[HomeController::class,'home'])->name('homepage');
 Route::get('/user/login',[PatientsController::class,'userLogin'])->name('user.login');
 Route::post('/loginValidation',[PatientsController::class,'userLoginValidation'])->name('login.validation');
 Route::get('/user/logout',[PatientsController::class,'userLogout'])->name('user.logout');
+Route::get('/password/reset',[PatientsController::class,'passwordRecoverEmail'])->name('password.recover.email.form');
+Route::post('/password/reset/post',[PatientsController::class,'passwordRecoverEmailPost'])->name('password.recover.email.post');
+Route::get('/password/form/{token}',[PatientsController::class,'passwordForm'])->name('password.form');
+Route::put('/password/update',[PatientsController::class,'passwordUpdate'])->name('password.update');
 
 
 

@@ -3,9 +3,15 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\PasswordReset;
 use App\Models\Patient;
+use App\Mail\PasswordResetMail;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Mail;
+
 
 class PatientsController extends Controller
 {
@@ -142,6 +148,72 @@ class PatientsController extends Controller
         Auth::guard('user')->logout();
         return redirect()->route('homepage')->with('success', 'Logout Successfully');
     }
+
+
+    public function passwordRecoverEmail()
+    {
+        return view('frontend.layout.Login.resetPasswordEmail');
+    }
+
+    public function passwordRecoverEmailPost(Request $request)
+    {
+        $userEmailValidate=Patient::where('email',$request->email)->first();
+
+        $token = Str::random(40);
+
+
+        if ($userEmailValidate)
+        {
+            $password=PasswordReset::insert([
+
+                'email'=>$request->email,
+                'token'=>$token
+
+            ]);
+            Mail::to($request->email)->send(new PasswordResetMail($password,$token));
+
+            return redirect()->back()->with('success','An Email Was Sent to Your Email. PLease Check !!!');
+
+        }else{
+
+            return redirect()->back()->with('successError','Email Did not Match with our database. please try again !!!');
+        }
+
+    }
+
+
+    public function passwordForm($id)
+    {
+
+            $tokenValidate=PasswordReset::where('token',$id)->first();
+
+            if ($tokenValidate)
+            {
+
+                return view('frontend.layout.Login.updatePassword',compact('tokenValidate'));
+
+            }else{
+
+
+                return redirect()->route('password.recover.email.form')->with('successError','Token Expired. Reset Again.');
+            }
+
+    }
+
+
+    public function passwordUpdate(Request  $request)
+    {
+        $passwordUpdate=User::where('email',$request->email)->update([
+
+            'password'=>bcrypt($request->password)
+
+        ]);
+
+        PasswordReset::where('email',$request->email)->delete();
+        return redirect()->route('user.login')->with('success','Password Reset Successfully');
+    }
+
+
 
 }
 

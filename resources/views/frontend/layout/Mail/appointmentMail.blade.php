@@ -1,1 +1,1 @@
-<h1>ksfsxvslkfbj</h1>
+<h1> Mail received successfully</h1>

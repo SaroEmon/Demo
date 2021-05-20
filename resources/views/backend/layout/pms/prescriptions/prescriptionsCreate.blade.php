@@ -46,11 +46,11 @@
                             <label class="label label--block">Select Patient Gender</label>
                             <div class="p-t-15">
                                 <label class="radio-container m-r-55">Male
-                                    <input type="radio" checked="checked" name="patient_gender">
+                                    <input type="radio" value="male" checked="checked" name="patient_gender">
                                     <span class="checkmark"></span>
                                 </label>
                                 <label class="radio-container">Female
-                                    <input type="radio" name="patient_gender">
+                                    <input type="radio" value="female" name="patient_gender">
                                     <span class="checkmark"></span>
                                 </label>
                             </div>

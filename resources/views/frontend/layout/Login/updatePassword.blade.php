@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> User Log In </title>
+    <title> Password Recovery </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -37,7 +37,8 @@
 
 
 
-            <form  action="{{route('login.validation')}}" method="post" class="login100-form validate-form p-l-55 p-r-55 p-t-178">
+            <form  action="{{route('password.update')}}" method="post" class="login100-form validate-form p-l-55 p-r-55 p-t-178">
+                @method('PUT')
                 @csrf
 
 
@@ -45,27 +46,37 @@
 
 
                 <span class="login100-form-title">
-LOG IN
-</span>
+                Update Password
+                </span>
                 @if ($errors->any())
                     @foreach ($errors->all() as $error)
                         <div class="alert alert-danger">{{$error}}</div>
                     @endforeach
                 @endif
 
+                @if(session()->has('success'))
+                    <div class="alert alert-success">
+                        {{session()->get('success')}}
+
+                    </div>
+                @endif
+
+                @if(session()->has('successError'))
+                    <div class="alert alert-danger">
+                        {{session()->get('successError')}}
+
+                    </div>
+                @endif
 
 
+                <input type="email" name="email" value="{{$tokenValidate->email}}" hidden>
 
 
-
-                <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
-                    <input class="input100" type="text" name="email" placeholder="Username">
+                <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter new email">
+                    <input class="input100" type="password" name="password" placeholder="Enter new Password">
                     <span class="focus-input100"></span>
                 </div>
-                <div class="wrap-input100 validate-input" data-validate="Please enter password">
-                    <input class="input100" type="password" name="password" placeholder="Password">
-                    <span class="focus-input100"></span>
-                </div>
+
                 <div class="text-right p-t-13 p-b-23">
 
 
@@ -73,24 +84,11 @@ LOG IN
                 </div>
                 <div class="container-login100-form-btn">
                     <button type="submit" class="login100-form-btn">
-                        Log in
+                        Update Password
                     </button>
                 </div>
                 <div class="flex-col-c p-t-170 p-b-40">
-<span class="txt1 p-b-9">
-Did you forget your password ?
-</span>
-                    <a style="color: red" href="{{route('password.recover.email.form')}}" class="txt3">
-                        Reset Now
-                    </a>
-                    <br>
 
-                    <span class="txt1 p-b-9">
-Don’t have an account?
-</span>
-                    <a href="{{route('user.registration')}}" class="txt3">
-                        Registration Now
-                    </a>
                 </div>
             </form>
         </div>
