@@ -11,5 +11,9 @@ class DashboardController extends Controller
    {
     return view('backend.welcome');
    }
+   public function homeDashboard()
+   {
+       return view('backend.layout.pms.home.homeDashboard');
+   }
 
 }

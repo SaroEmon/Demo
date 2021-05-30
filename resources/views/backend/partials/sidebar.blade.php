@@ -27,7 +27,7 @@
 
 
             <li>
-                <a href="#">
+                <a href="{{route('home.dashboard')}}">
                     <i class="fa fa-circle-o text-aqua"></i> <span>Home</span>
                     <span class="pull-right-container">
 
@@ -37,18 +37,41 @@
                 </a>
             </li>
 
-
+     @if(auth()->user()->role=='admin')
             <li><a href="{{route('doctors')}}"> <i class="fa fa-user-md"></i>  <span> Doctor </span> </a></li>
             <li><a href="{{route('nurses')}}"><i class="fa fa-user-md"></i> <span> Nurse </span></a></li>
             <li><a href="{{route('departments')}}"><i class="fa fa-user-md"></i> <span> Department </span></a></li>
+
+                <li><a href="{{route('patients')}}"><i class="fa fa-user-md"></i> <span> Patients </span></a></li>
+                <li><a href="{{route('prescriptions')}}"><i class="fa fa-user-md"></i> <span> Prescription </span></a></li>
+                <li><a href="{{route('medicines.view')}}"><i class="fa fa-user-md"></i> <span> Medicine </span></a></li>
+                <li><a href="{{route('pharmacies')}}"><i class="fa fa-user-md"></i> <span> Pharmacy </span></a></li>
+                <li class="header">LABELS</li>
+                <li><a href="{{route('receptionists')}}"><i class="fa fa-circle-o text-red"></i> <span>Receptionist</span></a></li>
+
+
+
+                <li><a href="{{route('appointments')}}"><i class="fa fa-circle-o text-yellow"></i> <span>Today's Appointments</span></a></li>
+            @endif
+
+
+
+            //DOCTOR LOGIN
+
+          @if(auth()->user()->role=='doctor')
             <li><a href="{{route('patients')}}"><i class="fa fa-user-md"></i> <span> Patients </span></a></li>
             <li><a href="{{route('prescriptions')}}"><i class="fa fa-user-md"></i> <span> Prescription </span></a></li>
-            <li><a href="{{route('medicines.view')}}"><i class="fa fa-user-md"></i> <span> Medicine </span></a></li>
-            <li><a href="{{route('pharmacies')}}"><i class="fa fa-user-md"></i> <span> Pharmacy </span></a></li>
-            <li class="header">LABELS</li>
-            <li><a href="{{route('receptionists')}}"><i class="fa fa-circle-o text-red"></i> <span>Receptionist</span></a></li>
-            <li><a href="{{route('appointments')}}"><i class="fa fa-circle-o text-yellow"></i> <span>Today's Appointments</span></a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+
+
+                <li class="header">LABELS</li>
+
+
+
+                <li><a href="{{route('appointments')}}"><i class="fa fa-circle-o text-yellow"></i> <span>Today's Appointments</span></a></li>
+            @endif
+
+
+{{--            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Report Generate</span></a></li>--}}
         </ul>
     </section>
     <!-- /.sidebar -->

@@ -68,9 +68,10 @@
             <ul>
                 <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                 <li><a class="nav-link scrollto" href="#about">About</a></li>
-                <li><a class="nav-link scrollto" href="#services">Services</a></li>
+{{--                <li><a class="nav-link scrollto" href="#services">Services</a></li>--}}
                 <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
                 <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
+                <li><a class="nav-link scrollto" href="">User Profile</a></li>
 
 
                 @auth('user')
@@ -97,13 +98,12 @@
 
 
 
-                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+{{--                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>--}}
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
 
         <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a>
-
     </div>
 </header><!-- End Header -->
 
@@ -345,15 +345,15 @@
                @csrf
                 <div class="row">
                     <div class="col-md-4 form-group">
-                        <input type="text" name="userName" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                        <input readonly type="text" @auth('user') value="{{auth('user')->user()->patientname}}" @else value=" User Name : Login first please" @endauth name="userName" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                         <div class="validate"></div>
                     </div>
                     <div class="col-md-4 form-group mt-3 mt-md-0">
-                        <input type="email" class="form-control" readonly name="userEmail" id="email" @auth('user') value="{{auth('user')->user()->email}}" @else value=" email:login please" @endauth placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                        <input type="email" class="form-control" readonly name="userEmail" id="email" @auth('user') value="{{auth('user')->user()->email}}" @else value=" Email : Login first please" @endauth placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
                         <div class="validate"></div>
                     </div>
                     <div class="col-md-4 form-group mt-3 mt-md-0">
-                        <input type="number" minlength="11" maxlength="11" class="form-control" name="userPhone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter 11 digit number">
+                        <input type="number" readonly @auth('user') value="{{auth('user')->user()->contact}}" @else value=" User Contact : Login first please" @endauth minlength="11" maxlength="11" class="form-control" name="userPhone" id="phone"  placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter 11 digit number">
                         <div class="validate"></div>
                     </div>
                 </div>

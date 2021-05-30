@@ -15,7 +15,7 @@
         <th scope="col">GENDER</th>
         <th scope="col">DEPARTMENT</th>
         <th scope="col">ADDRESS</th>
-        <th scope="col">WORD NO</th>
+        <th scope="col">NATIONAL ID</th>
         <th scope="col">ACTION</th>
 
 
@@ -33,7 +33,7 @@
                 <td>{{$data->gender}}</td>
                 <td>{{$data->department}}</td>
                 <td>{{$data->address}}</td>
-                <td>{{$data->word_no}}</td>
+                <td>{{$data->nationalID}}</td>
 
                 <td>
                     <a class="btn btn-success" href="">view</a>

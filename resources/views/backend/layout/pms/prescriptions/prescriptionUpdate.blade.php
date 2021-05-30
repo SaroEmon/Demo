@@ -91,13 +91,29 @@
                         </div>
                     </div>
 
+
                     <div class="form-row m-b-55">
                         <div class="name">Patient Age</div>
                         <div class="value">
                             <div class="row row-refine">
-                                <div class="col-3">
+                                <div class="col-9">
                                     <div class="input-group-desc">
-                                        <input class="input--style-5" type="number" name="age">
+                                        <input   value="{{$prescription->age}}" class="input--style-5" type="number" name="age">
+                                        <label class="label--desc"></label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row m-b-55">
+                        <div class="name">Patient Age</div>
+                        <div class="value">
+                            <div class="row row-refine">
+                                <div class="col-9">
+                                    <div class="input-group-desc">
+                                        <input   value="{{$prescription->age}}" class="input--style-5" type="number" name="age">
                                         <label class="label--desc"></label>
                                     </div>
                                 </div>

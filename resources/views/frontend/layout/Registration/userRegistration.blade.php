@@ -66,8 +66,55 @@ REGISTRATION
                     <span class="focus-input100"></span>
                 </div>
 
+
                 <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
                     <input class="input100" type="text" name="userEmail" placeholder="UserEmail">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+                    <input class="input100" type="number" name="usercontact" placeholder="Contact">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="form-group input-group">
+                    <span class="focus-input100"></span>
+
+                    <select name="department" class="form-control">
+                        <option selected=""> Select Department</option>
+                        <option value="medicine">Medicine</option>
+                        <option value="physiology"> Physiology</option>
+                        <option value="ophthalmology"> Ophthalmology</option>
+                        <option value="microbiology"> Microbiology</option>
+                        <option value="pathology"> Pathology </option>
+                        <option value="pharmacology"> Pharmacology</option>
+                        <option value="community medicine"> Community Medicine</option>
+                        <option value="surgery"> Surgery </option>
+
+                    </select>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+                    <select name="gender" id="">
+                        <span class="focus-input100"></span>
+
+
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+
+
+                    </select>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+                    <input class="input100" type="text" name="address" placeholder="Address">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+                    <input class="input100" type="text" name="nationalID" placeholder="National ID">
                     <span class="focus-input100"></span>
                 </div>
 

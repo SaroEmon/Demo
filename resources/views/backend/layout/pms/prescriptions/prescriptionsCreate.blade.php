@@ -91,7 +91,9 @@
                     </div>
 
                     <div class="form-row m-b-55">
-                        <div class="name">Patient Age</div>
+                        <div
+                            value="{{$prescription->age}}" class="name">Patient Age
+                        </div>
                         <div class="value">
                             <div class="row row-refine">
                                 <div class="col-3">

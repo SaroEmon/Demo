@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\ReportController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Backend\DoctorsController;
@@ -76,6 +77,7 @@ Route::group(['prefix'=>'admin'],function (){
 //DASHBOARD (control panel BACKEND)
 
         Route::get('/', [DashboardController::class, 'adminHome'])->name('home');
+        Route::get('/home', [DashboardController::class, 'homeDashboard'])->name('home.dashboard');
 
 
 
@@ -111,7 +113,7 @@ Route::group(['prefix'=>'admin'],function (){
         Route::get('/doctor/edit/{id}',[DoctorsController::class,'doctorEdit'])->name('doctor.edit');
         Route::put('/doctor/update/{id}',[DoctorsController::class,'doctorUpdate'])->name('doctor.update');
 
-        Route::post('/doctor/search',[DoctorsController::class,'search'])->name('doctor.search');
+//        Route::post('/doctor/search',[DoctorsController::class,'search'])->name('doctor.search');
 
 
 //NURSE
@@ -201,7 +203,8 @@ Route::group(['prefix'=>'admin'],function (){
 
 
 
-
+//REPORT GENERARTE
+        Route::get('/report', [ReportController::class, 'reportPrescription'])->name('report.prescription');
 
 
     });

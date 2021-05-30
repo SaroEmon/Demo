@@ -2,9 +2,9 @@
 @section('page')
     <!-- Button trigger modal -->
     <br>
-{{--    <center><a href="{{route('prescriptions.create')}}"><button type="button" class="btn btn-danger" >--}}
-{{--                ADD PRESCRIPTION--}}
-{{--            </button></a></center><br>--}}
+    <center><a href="{{route('report.prescription')}}"><button type="button" class="btn btn-success" >
+                REPORT GENERATE
+            </button></a></center><br>
     <table  class="table table-responsive table-bordered table-hover">
         <thead>
 

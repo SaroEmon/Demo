@@ -22,21 +22,24 @@
 
 {{--    //Search Panel--}}
 
-    <div class="row-cols-4">
-    <div class="col-md-4">
 
-        <form class="form-control" action="{{route('doctor.search')}}"method="POST">
-            @csrf
-            <input type="text" placeholder="Search here.." name="search">
-            <button type="submit"><i class="fa fa-search"></i>Search</button>
-        </form>
+{{--<div class="row">--}}
+{{--    <div class="col-md-4">--}}
+{{--        <form action="{{route('doctor.search')}}" method="POST">--}}
+{{--            @csrf--}}
+
+{{--        <input name="search" type="text" placeholder="search" class="form-control">--}}
+{{--        <button type="submit"class="btn btn-primary">Search</button>--}}
+{{--        </form>--}}
+{{--    </div>--}}
+
+{{--</div>--}}
 
 
-    </div>
 
 
 
-        {{--    //End Search Panel--}}
+    {{--    //End Search Panel--}}
 
 
 

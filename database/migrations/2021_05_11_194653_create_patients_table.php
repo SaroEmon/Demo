@@ -21,7 +21,7 @@ class CreatePatientsTable extends Migration
             $table->string('gender');
             $table->string('department');
             $table->text('address');
-            $table->integer('word_no');
+            $table->text('nationalID');
             $table->string('password');
             $table->timestamps();
         });

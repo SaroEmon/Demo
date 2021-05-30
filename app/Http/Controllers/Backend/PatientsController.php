@@ -98,11 +98,12 @@ class PatientsController extends Controller
 
             'patientname' => $request->userName,
             'email' => $request->userEmail,
-            'contact' => '01626949969',
-            'gender' => 'male',
-            'department' => 'medicine',
-            'address' => 'gazipur' ,
-            'word_no' => '01',
+            'contact' =>$request->usercontact,
+            'gender' => $request->gender,
+            'department' =>$request-> department,
+            'address' => $request-> address ,
+            'nationalID' => $request-> nationalID ,
+
             'password' => bcrypt($request->userPassword),
 
 
@@ -203,7 +204,7 @@ class PatientsController extends Controller
 
     public function passwordUpdate(Request  $request)
     {
-        $passwordUpdate=User::where('email',$request->email)->update([
+        $passwordUpdate=Patient::where('email',$request->email)->update([
 
             'password'=>bcrypt($request->password)
 

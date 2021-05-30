@@ -43,12 +43,12 @@
 
 
 
-                <div class="form-group input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                    </div>
-                    <input value="{{$appointments->department_id}}" name="departmentId" class="form-control" placeholder="Department ID" type="text">
-                </div> <!-- form-group end.// -->
+{{--                <div class="form-group input-group">--}}
+{{--                    <div class="input-group-prepend">--}}
+{{--                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>--}}
+{{--                    </div>--}}
+{{--                    <input value="{{$appointments->department_id}}" name="departmentId" class="form-control" placeholder="Department ID" type="text">--}}
+{{--                </div> <!-- form-group end.// -->--}}
 
 
                 <div class="form-group input-group">

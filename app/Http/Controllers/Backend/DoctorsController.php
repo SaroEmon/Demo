@@ -94,6 +94,14 @@ public  function doctorsList(Request $request)
 
         ]);
         return redirect()->route('doctors')->with('success', 'Doctor Updated successfully');
+
+
+
+//SEARCHING PANEL
+//        public function search(Request $request)
+//        {
+//            dd($request->all());
+//        }
     }
 
 
