@@ -80,7 +80,7 @@ class AppointmentController extends Controller
                 Mail::to(auth('user')->user()->email)->send(new AppointmentMail($appointment));
 
 
-                return redirect()->back()->with('success', 'Booking Created Successfully');
+                return redirect()->route('user.profileView')->with('success', 'Booking Created Successfully');
             } else {
                 return redirect()->back()->with('danger', 'doctor limit reached .Book another doctor');
 

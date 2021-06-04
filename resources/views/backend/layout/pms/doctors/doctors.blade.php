@@ -20,31 +20,6 @@
 
 
 
-{{--    //Search Panel--}}
-
-
-{{--<div class="row">--}}
-{{--    <div class="col-md-4">--}}
-{{--        <form action="{{route('doctor.search')}}" method="POST">--}}
-{{--            @csrf--}}
-
-{{--        <input name="search" type="text" placeholder="search" class="form-control">--}}
-{{--        <button type="submit"class="btn btn-primary">Search</button>--}}
-{{--        </form>--}}
-{{--    </div>--}}
-
-{{--</div>--}}
-
-
-
-
-
-    {{--    //End Search Panel--}}
-
-
-
-
-
 
 
     <table  class="table table-responsive table-bordered table-hover">

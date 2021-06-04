@@ -56,7 +56,7 @@
 
 
 
-            //DOCTOR LOGIN
+{{--            //DOCTOR LOGIN--}}
 
           @if(auth()->user()->role=='doctor')
             <li><a href="{{route('patients')}}"><i class="fa fa-user-md"></i> <span> Patients </span></a></li>

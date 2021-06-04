@@ -80,13 +80,31 @@ public  function doctorsList(Request $request)
         return view ('backend.layout.pms.doctors.doctorsEdit', compact('doctors'));
     }
 
+
+
+
     public function doctorUpdate(Request $request,$id)
     {
+
+        $file_name="";
+        if ($request->hasFile('doctorImage'))
+        {
+
+            $file=$request->file('doctorImage');
+            if ($file->isValid())
+            {
+
+                $file_name=date('Ymdms').".".$file->getClientOriginalExtension();
+                $file->storeAs('doctors',$file_name);
+            }
+        }
+
         Doctor::find($id)->update([
             'name' => $request->name,
             'email' => $request->email,
             'contact' => $request->contact,
             'gender' => $request->gender,
+            'image' => $file_name,
             'department' => $request->department,
             'address' => $request->address,
             'room_no' => $request->room_no,

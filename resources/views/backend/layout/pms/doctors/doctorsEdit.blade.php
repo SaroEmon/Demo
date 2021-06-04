@@ -10,9 +10,7 @@
         <form action="{{route('doctor.update',$doctors->id)}}" method="post" enctype="multipart/form-data">
 
             @csrf
-            @method('PUT'
-
-)
+            @method('PUT')
             <div class="form-group input-group">
                 <div class="input-group-prepend">
                     <span class="input-group-text"> <i class="fa fa-user"></i> </span>
@@ -37,7 +35,7 @@
             {{--                PICTURE--}}
             <div class="form-group">
                 <label for="">Upload photo:</label><br>
-                <input type="file" name="doctorImage" placeholder="please Select an Image">
+                <input type="file" name="doctorImage" required placeholder="please Select an Image">
 
 
             </div>

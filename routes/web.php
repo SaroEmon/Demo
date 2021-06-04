@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\PaymentController;
 use App\Http\Controllers\Backend\ReportController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
@@ -15,6 +16,7 @@ use App\Http\Controllers\Backend\ReceptionistsController;
 use App\Http\Controllers\Backend\AdminsController;
 use App\Http\Controllers\Backend\AppointmentController;
 use App\Http\Controllers\Backend\DepartmentsController;
+use App\Http\Controllers\Frontend\UserController;
 
 
 
@@ -46,8 +48,20 @@ Route::get('/password/form/{token}',[PatientsController::class,'passwordForm'])-
 Route::put('/password/update',[PatientsController::class,'passwordUpdate'])->name('password.update');
 
 
+//USER PROFILE
+Route::get('/user/Profile',[UserController::class,'userProfile'])->name('user.profile');
+Route::get('/userProfile/view',[UserController::class,'userProfileView'])->name('user.profileView');
 
 
+
+//PAYMENT METHOD
+Route::get('/payment/form/{id}', [PaymentController::class, 'paymentForm'])->name('payment.form');
+Route::post('/payment/view', [PaymentController::class, 'paymentView'])->name('payment.view');
+Route::get('/payment/list', [PaymentController::class, 'paymentList'])->name('payment.list');
+
+
+
+//USER REGISTRATION
 Route::get('/user/registration',[PatientsController::class,'userRegistration'])->name('user.registration');
 Route::post('/user/registrationCreate',[PatientsController::class,'registrationCreate'])->name('registration.create');
 
@@ -206,6 +220,7 @@ Route::group(['prefix'=>'admin'],function (){
 //REPORT GENERARTE
         Route::get('/report', [ReportController::class, 'reportPrescription'])->name('report.prescription');
 
+//PAYMENT METHOD
 
     });
 });

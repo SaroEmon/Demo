@@ -108,7 +108,7 @@ class PatientsController extends Controller
 
 
         ]);
-        return redirect ()->back()->with( 'success',' Successfully you have Registered');
+        return redirect ()->route('user.login')->with( 'success',' Successfully you have Registered');
 
     }
 
